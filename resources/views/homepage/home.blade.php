@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>homapage</h1>
+    <h1 class="h-screen">homapage</h1>
 
 
 @endsection
