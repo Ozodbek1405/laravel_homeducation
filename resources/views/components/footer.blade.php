@@ -38,7 +38,7 @@
                     <a href="#!" class="text-gray-600 hover:text-yellow-500">Biz haqimizda</a>
                 </p>
                 <p class="mb-4">
-                    <a href="#!" class="text-gray-600 hover:text-yellow-500">FAQ</a>
+                    <a href="/faq" class="text-gray-600 hover:text-yellow-500">FAQ</a>
                 </p>
                 <p class="mb-4">
                     <a href="#!" class="text-gray-600 hover:text-yellow-500">Yo'riqnoma</a>

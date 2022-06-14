@@ -19,7 +19,9 @@ Route::get('/', function () {
 Route::get('/categories', function () {
     return view('categories.categories');
 });
-
+Route::get('/faq', function () {
+    return view('homepage.faq');
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
