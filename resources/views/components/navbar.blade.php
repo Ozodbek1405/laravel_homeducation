@@ -11,9 +11,9 @@
                 </div>
                 <!-- Primary Navbar items -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="/categories" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Kategoriyalar</a>
-                    <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Biz haqimizda</a>
-                    <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Ariza qoldirish</a>
+                    <a href="/categories" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Kategoriyalar</a>
+                    <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Biz haqimizda</a>
+                    <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Ariza qoldirish</a>
                 </div>
             </div>
             <!-- Secondary Navbar items -->
@@ -22,13 +22,13 @@
                     <i class="fab fa-facebook-f hover:text-yellow-500"></i>
                 </a>
                 <a href="#!" class="mr-6 text-gray-600">
-                    <i class="fab fa-telegram hover:text-yellow-500"></i>
+                    <i class="fab fa-telegram text-blue-500 hover:text-yellow-500"></i>
                 </a>
                 <a href="#!" class="mr-6 text-gray-600">
-                    <i class="fab fa-google hover:text-yellow-500"></i>
+                    <i class="fab fa-google text-green-500 hover:text-yellow-500"></i>
                 </a>
                 <a href="#!" class="mr-6 text-gray-600">
-                    <i class="fab fa-instagram hover:text-yellow-500"></i>
+                    <i class="fab fa-instagram text-red-500 hover:text-yellow-500"></i>
                 </a>
             </div>
             <!-- Mobile menu button -->
@@ -51,11 +51,25 @@
     </div>
     <!-- mobile menu -->
     <div class="hidden mobile-menu">
-        <ul class="py-4">
-            <li class="active"> <a href="/categories" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Kategoriyalar</a></li>
-            <li class="my-6"> <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Biz haqimizda</a></li>
-            <li class="pb-4"><a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Ariza qoldirish</a></li>
+        <ul class="py-4 ml-8">
+            <li class="active"> <a href="/categories" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Kategoriyalar</a></li>
+            <li class="my-6"> <a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Biz haqimizda</a></li>
+            <li class="pb-4"><a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Ariza qoldirish</a></li>
         </ul>
+        <div class="items-center justify-center m-8">
+            <a href="#!" class="mr-6 text-gray-600">
+                <i class="fab fa-facebook-f hover:text-yellow-500"></i>
+            </a>
+            <a href="#!" class="mr-6 text-gray-600">
+                <i class="fab fa-telegram hover:text-yellow-500"></i>
+            </a>
+            <a href="#!" class="mr-6 text-gray-600">
+                <i class="fab fa-google hover:text-yellow-500"></i>
+            </a>
+            <a href="#!" class="mr-6 text-gray-600">
+                <i class="fab fa-instagram hover:text-yellow-500"></i>
+            </a>
+        </div>
     </div>
     <script>
         const btn = document.querySelector("button.mobile-menu-button");
