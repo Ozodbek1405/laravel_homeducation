@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class=" pt-32 pb-8" style="background: linear-gradient(90deg, rgba(241,241,183,1) 0%, rgba(241,241,183,1) 7%, rgba(241,241,183,0.846673703661152) 11%, rgba(253,248,95,1) 91%);">
+    <div class=" pt-32 pb-8" style="background: #ffffff">
         <div class=" flex flex-row gap-x-4 w-11/12 mx-auto text-blue-800">
             <div class="w-1/2 mx-auto">
                 <img class="" src="https://demo.themexbd.com/rtl/acadamy/wp-content/uploads/2022/03/slider-image.png" alt="">
@@ -232,15 +232,6 @@
             </div>
         </div>
     </div>
-
-    {{--  team members  --}}
-    <div class="w-11/12 mx-auto mb-24" style='background-color:rgba(0, 0, 0, 0)'>
-        <div class="container max-w-7xl mx-auto px-4">
-            <h1 class="mb-16 text-5xl font-bold text-center">Jamoa a'zolari</h1>
-            @include('components.members')
-        </div>
-    </div>
-
 
         {{--   telegram bot   --}}
     <div class="py-24 my-24" style="background: linear-gradient(90deg, rgba(241,241,183,1) 0%, rgba(241,241,183,1) 7%, rgba(241,241,183,0.846673703661152) 11%, rgba(253,248,95,1) 91%);">

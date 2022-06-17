@@ -22,8 +22,7 @@
         <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="">
                 <a href="/" class="flex items-center py-4 px-2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1vg1F6D8S-eRQidsImQb6SxF3QGXLTj98Vg&usqp=CAU" alt="Logo" class="h-8 w-8 mr-2">
-                    <span class="font-semibold text-gray-500 text-lg">HOMEDUCATION</span>
+                    <img src="/storage/{!!str_replace("\\","/",setting('site.logo'))!!}" alt="Logo" class="h-12 w-32">
                 </a>
                 <p>
                     Here you can use rows and columns to organize your footer content. Lorem ipsum dolor
@@ -38,7 +37,7 @@
                     <a href="#!" class="text-gray-600 hover:text-yellow-500">Biz haqimizda</a>
                 </p>
                 <p class="mb-4">
-                    <a href="/faq" class="text-gray-600 hover:text-yellow-500">FAQ</a>
+                    <a href="{{route('faq')}}" class="text-gray-600 hover:text-yellow-500">FAQ</a>
                 </p>
                 <p class="mb-4">
                     <a href="#!" class="text-gray-600 hover:text-yellow-500">Yo'riqnoma</a>
