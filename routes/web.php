@@ -25,6 +25,9 @@ Route::get('/', function () {
 Route::get('/categories', function () {
     return view('categories.categories');
 });
+
+
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

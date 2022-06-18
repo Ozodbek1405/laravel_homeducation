@@ -5,16 +5,16 @@
         </div>
         <div class="flex justify-center">
             <a href="#!" class="mr-6 text-gray-600">
-                <i class="fab fa-facebook-f hover:text-yellow-500"></i>
+                <i class="fab fa-facebook-f hover:text-blue-500"></i>
             </a>
             <a href="#!" class="mr-6 text-gray-600">
-                <i class="fab fa-telegram hover:text-yellow-500"></i>
+                <i class="fab fa-telegram hover:text-blue-500"></i>
             </a>
             <a href="#!" class="mr-6 text-gray-600">
-                <i class="fab fa-google hover:text-yellow-500"></i>
+                <i class="fab fa-google hover:text-blue-500"></i>
             </a>
             <a href="#!" class="mr-6 text-gray-600">
-                <i class="fab fa-instagram hover:text-yellow-500"></i>
+                <i class="fab fa-instagram hover:text-blue-500"></i>
             </a>
         </div>
     </div>
@@ -34,13 +34,13 @@
                     FOYDALI ALOQLAR
                 </h6>
                 <p class="mb-4">
-                    <a href="#!" class="text-gray-600 hover:text-yellow-500">Biz haqimizda</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500">Biz haqimizda</a>
                 </p>
                 <p class="mb-4">
-                    <a href="{{route('faq')}}" class="text-gray-600 hover:text-yellow-500">FAQ</a>
+                    <a href="{{route('faq')}}" class="text-gray-600 hover:text-blue-500">FAQ</a>
                 </p>
                 <p class="mb-4">
-                    <a href="#!" class="text-gray-600 hover:text-yellow-500">Yo'riqnoma</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500">Yo'riqnoma</a>
                 </p>
             </div>
             <div class="">
