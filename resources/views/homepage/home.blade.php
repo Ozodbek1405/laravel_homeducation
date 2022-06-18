@@ -217,16 +217,16 @@
     </div>
 
         {{--   telegram bot   --}}
-    <div class="py-24 my-24" style="background: linear-gradient(90deg, rgba(241,241,183,1) 0%, rgba(241,241,183,1) 7%, rgba(241,241,183,0.846673703661152) 11%, rgba(253,248,95,1) 91%);">
+    <div class="py-24 my-24" style="background: rgb(85,127,238);">
         <div class="w-11/12 mx-auto grid grid-cols-12 gap-x-4 items-center ">
-            <div class="col-span-8 my-auto text-blue-800">
+            <div class="col-span-8 my-auto text-white">
                 <h1 class="text-3xl mb-4 font-medium">Bot orqali ariza qoldirish</h1>
                 <p class="text-lg">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="col-span-4">
-               <button class="border-2 rounded-3xl px-8 py-2 text-2xl text-blue-800 border-blue-800 hover:bg-yellow-300 hover:text-white">
+               <button class="border-2 rounded-3xl px-8 py-2 text-2xl text-white border-white hover:bg-blue-700 hover:text-white">
                    <a href="#">Botga o'tish</a>
                </button>
             </div>

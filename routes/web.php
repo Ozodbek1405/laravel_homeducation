@@ -25,7 +25,9 @@ Route::get('/', function () {
 Route::get('/categories', function () {
     return view('categories.categories');
 });
-
+Route::get('/create', function () {
+    return view('applications.create');
+});
 
 
 Route::group(['prefix' => 'admin'], function () {
