@@ -18,16 +18,16 @@
             <!-- Secondary Navbar items -->
             <div class="hidden md:flex items-center justify-center">
                 <a href="#!" class="mr-6 text-gray-600">
-                    <i class="fab fa-facebook-f hover:text-yellow-500"></i>
-                </a>
-                <a href="#!" class="mr-6 text-gray-600">
                     <i class="fab fa-telegram text-blue-500 hover:text-yellow-500"></i>
                 </a>
                 <a href="#!" class="mr-6 text-gray-600">
-                    <i class="fab fa-google text-green-500 hover:text-yellow-500"></i>
+                    <i class="fab fa-instagram text-red-500 hover:text-yellow-500"></i>
                 </a>
                 <a href="#!" class="mr-6 text-gray-600">
-                    <i class="fab fa-instagram text-red-500 hover:text-yellow-500"></i>
+                    <i class="fab fa-facebook-f text-blue-500 hover:text-yellow-500"></i>
+                </a>
+                <a href="#!" class="mr-6 text-gray-600">
+                    <i class="fab fa-google text-red-400 hover:text-yellow-500"></i>
                 </a>
             </div>
             <!-- Mobile menu button -->
