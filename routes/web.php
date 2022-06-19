@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FaqController;
+use RealRashid\SweetAlert\Facades\Alert;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +14,10 @@ use App\Http\Controllers\FaqController;
 |
 */
 
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
 Route::get('/faq',[FaqController::class,'faq'])->name('faq');
 Route::post('/question',[FaqController::class,'question'])->name('faq.question');
 
@@ -28,8 +33,14 @@ Route::get('/categories', function () {
 Route::get('/create', function () {
     return view('applications.create');
 });
-
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
+Route::get('/create_categories', function () {
+    return view('applications.create_categories');
 });
+Route::get('/parents', function () {
+    return view('applications.parents');
+});
+Route::get('/teachers', function () {
+    return view('applications.teachers');
+});
+
+

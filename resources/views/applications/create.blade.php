@@ -12,11 +12,11 @@
                     <div class="flex flex-row mx-auto w-9/12">
                         <div class="flex gap-x-2 items-center mx-auto">
                             <input class="h-4 w-4" type="radio" name="radio" value="remote" id="remote">
-                            <label class="text-lg" for="remote">Ota-ona</label>
+                            <label class="text-lg cursor-pointer" for="remote">Ota-ona</label>
                         </div>
                         <div class="flex gap-x-2 items-center mx-auto">
                             <input class="h-4 w-4" type="radio" name="radio" value="address" id="address">
-                            <label class="text-lg" for="address">O'qituvchi</label>
+                            <label class="text-lg cursor-pointer" for="address">O'qituvchi</label>
                         </div>
                     </div>
                     <div class="flex mx-auto my-12">
