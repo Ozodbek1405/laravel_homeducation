@@ -8,16 +8,18 @@
                 <p class="text-2xl font-semibold mb-3 text-center">
                     Biror variantni tanlang
                 </p>
-                <form action="" method="" class="my-10">
+                <form action="{{route('create.name.store')}}" method="POST" class="my-10">
+                    @csrf
                     <div class="flex flex-row mx-auto w-9/12">
                         <div class="flex gap-x-2 items-center mx-auto">
-                            <input class="h-4 w-4" type="radio" name="radio" value="remote" id="remote">
-                            <label class="text-lg cursor-pointer" for="remote">Ota-ona</label>
+                            <input class="h-4 w-4" type="radio" name="radio" value="parent" id="parent">
+                            <label class="text-lg cursor-pointer" for="parent">Ota-ona</label>
                         </div>
                         <div class="flex gap-x-2 items-center mx-auto">
-                            <input class="h-4 w-4" type="radio" name="radio" value="address" id="address">
-                            <label class="text-lg cursor-pointer" for="address">O'qituvchi</label>
+                            <input class="h-4 w-4" type="radio" name="radio" value="teacher" id="teacher">
+                            <label class="text-lg cursor-pointer" for="teacher">O'qituvchi</label>
                         </div>
+
                     </div>
                     <div class="flex mx-auto my-12">
                         <input type="submit" id="next"

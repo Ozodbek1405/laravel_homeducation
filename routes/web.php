@@ -22,7 +22,7 @@ Route::group(['prefix' => 'admin'], function () {
 Route::get('/faq',[FaqController::class,'faq'])->name('faq');
 Route::post('/question',[FaqController::class,'question'])->name('faq.question');
 Route::get('/create',[CreateController::class,'name'])->name('create.name');
-
+Route::post('/name_store',[CreateController::class,'name_store'])->name('create.name.store');
 
 
 Route::get('/', function () {
