@@ -38,9 +38,9 @@
                     </div>
                     <div class="flex mx-auto my-12 w-9/12 mx-auto">
                         <a onclick="myFunction()">
-                            <input type="button" id="next"
-                                   class="mx-auto cursor-pointer bg-white border border-2 border-blue-500 text-gray-600 hover:text-blue-500 font-normal text-2xl py-3 px-14 rounded-2xl"
-                                   name="" value="Orqaga">
+                            <input type="button"
+                                   class="mx-auto cursor-pointer bg-white border border-2 border-blue-900 text-blue-900 hover:text-red-600 hover:border-red-600 font-normal text-2xl py-3 px-14 rounded-2xl"
+                                   value="Orqaga">
                         </a>
                         <script>
                             function myFunction() {
@@ -48,7 +48,6 @@
                             }
                         </script>
                         <input type="submit" id="next"
-                               style="background: linear-gradient(90deg, rgba(85,127,238,0.846673703661152) 8%, rgba(36,162,237,1) 65%, rgba(68,135,238,1) 100%);"
                                class="mx-auto cursor-pointer text-white font-normal text-2xl py-3 px-14 rounded-2xl"
                                name="" value="Yuborish">
                     </div>

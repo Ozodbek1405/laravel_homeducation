@@ -20,8 +20,8 @@
                         </div>
                     </div>
                     <div class="flex mx-auto my-12">
-                        <input type="submit" id="next" style="background: linear-gradient(90deg, rgba(85,127,238,0.846673703661152) 8%, rgba(36,162,237,1) 65%, rgba(68,135,238,1) 100%);"
-                               class="mx-auto bg-yellow-500 hover:bg-yellow-600 cursor-pointer text-white font-normal text-2xl py-3 px-14 rounded-2xl"
+                        <input type="submit" id="next"
+                               class="mx-auto cursor-pointer text-white font-normal text-2xl py-3 px-14 rounded-2xl"
                                name="" value="Yuborish">
                     </div>
                 </form>

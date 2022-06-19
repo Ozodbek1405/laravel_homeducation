@@ -2,8 +2,8 @@
 
 @section('content')
 
-    <div class=" pt-32 pb-8" style="background: #ffffff">
-        <div class=" flex flex-row gap-x-4 w-11/12 mx-auto text-blue-800">
+    <div class=" pt-32 pb-8" style="background: #0c375e">
+        <div class=" flex flex-row gap-x-4 w-11/12 mx-auto text-white">
             <div class="w-1/2 mx-auto">
                 <img class="" src="https://demo.themexbd.com/rtl/acadamy/wp-content/uploads/2022/03/slider-image.png" alt="">
             </div>
@@ -22,163 +22,163 @@
        <h1 class="text-center sm:text-5xl text-3xl font-bold mt-4 mb-12">Kategoriyalar</h1>
            <div class="container mx-auto px-10">
                <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                            <div class="">
                                <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                                </svg>
                            </div>
-                           <h3 class="text-lg font-bold">
+                           <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                                 Matematika
                            </h3>
                        </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold hover:text-red-600" style="color: #0c375e">
                            Matematika
                        </h3>
                    </div>
-                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 hover:bg-blue-300 rounded-lg cursor-pointer">
+                   <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
                        <div class="">
                            <svg class="hi-outline hi-template inline-block w-12 h-12 text-indigo-500" stroke="currentColor" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                            </svg>
                        </div>
-                       <h3 class="text-lg font-bold">
+                       <h3 class="text-lg font-bold text-blue-500 hover:text-red-500">
                            Matematika
                        </h3>
                    </div>
@@ -211,13 +211,13 @@
                     velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <a href="#" class="border-2 border-blue-500 px-4 py-3 rounded-lg font-medium cursor-pointer text-blue-500 hover:text-white hover:bg-blue-500">Ko'proq o'qish</a>
+                <a href="#" class="border-2 px-4 py-3 rounded-lg font-medium cursor-pointer hover:text-white hover:bg-blue-900" style="border-color: #0c375e">Ko'proq o'qish</a>
             </div>
         </div>
     </div>
 
         {{--   telegram bot   --}}
-    <div class="py-24 my-24" style="background: rgb(85,127,238);">
+    <div class="py-24 my-24" style="background: #0c375e">
         <div class="w-11/12 mx-auto grid grid-cols-12 gap-x-4 items-center ">
             <div class="col-span-8 my-auto text-white">
                 <h1 class="text-3xl mb-4 font-medium">Bot orqali ariza qoldirish</h1>
@@ -226,7 +226,7 @@
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="col-span-4">
-               <button class="border-2 rounded-3xl px-8 py-2 text-2xl text-white border-white hover:bg-blue-700 hover:text-white">
+               <button class="border-2 rounded-3xl px-8 py-2 text-2xl text-white border-white hover:bg-red-700">
                    <a href="#">Botga o'tish</a>
                </button>
             </div>

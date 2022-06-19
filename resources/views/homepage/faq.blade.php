@@ -11,13 +11,13 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-<section class="bg-gray-500 py-8">
+<section class="py-8" style="background: #0c375e">
     <div class="lg:w-8/12 mx-auto w-10/12">
         <div class="sm:block lg:flex flex-column justify-between ">
             <a href="/" class="flex items-center py-4 px-2">
                 <img src="/storage/{!!str_replace("\\","/",setting('site.logo'))!!}" alt="Logo" class="h-12 w-32">
             </a>
-            <a href="/" class="items-center py-4 px-2 text-white hover:text-yellow-500">
+            <a href="/" class="items-center py-4 px-2 text-white hover:text-red-500">
                 <i class="fa fa-link"></i>
                 Homeducation veb-saytiga o'ting
             </a>
@@ -30,7 +30,7 @@
             <div class="flex relative mx-auto w-full">
                 <input class="bg-gray-400  h-16 pl-16 pr-6 rounded-md focus:outline-none focus:border-yellow-500 focus:bg-white w-full text-black lg:md:text-base text-base hover:bg-gray-400"
                        type="text" name="questions" placeholder="Savolingizni qoldiring...   " required/>
-                <input type="submit" class="rounded-md bg-gray-400 cursor-pointer ml-4 px-5 text-xl hover:text-white hover:bg-blue-400" value="Yuborish">
+                <input type="submit" class="rounded-md bg-gray-400 cursor-pointer ml-4 px-5 text-xl hover:text-white hover:bg-red-500" value="Yuborish">
             </div>
             @if(session()->has('message'))
                 <div class="text-white   text-xl">

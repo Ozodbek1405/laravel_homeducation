@@ -1,25 +1,27 @@
-<footer class="text-center lg:text-left bg-gray-100 text-gray-600">
-    <div class="w-11/12 mx-auto flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
-        <div class="mr-12 hidden lg:block">
-            <span>Ijtimoiy tarmoqlarda biz bilan bog'laning:</span>
-        </div>
-        <div class="flex justify-center">
-            <a href="#!" class="mr-6 text-gray-600">
-                <i class="fab fa-facebook-f hover:text-blue-500"></i>
-            </a>
-            <a href="#!" class="mr-6 text-gray-600">
-                <i class="fab fa-telegram hover:text-blue-500"></i>
-            </a>
-            <a href="#!" class="mr-6 text-gray-600">
-                <i class="fab fa-google hover:text-blue-500"></i>
-            </a>
-            <a href="#!" class="mr-6 text-gray-600">
-                <i class="fab fa-instagram hover:text-blue-500"></i>
-            </a>
+<footer class="text-center lg:text-left text-white">
+    <div class="p-6 border-b border-gray-300 bg-red-600" >
+        <div class="w-11/12 mx-auto flex justify-center items-center lg:justify-between">
+            <div class="mr-12 hidden lg:block text-white">
+                <span>Ijtimoiy tarmoqlarda biz bilan bog'laning:</span>
+            </div>
+            <div class="flex justify-center text-white">
+                <a href="#!" class="mr-6 hover:text-blue-900">
+                    <i class="fab fa-facebook-f "></i>
+                </a>
+                <a href="#!" class="mr-6 hover:text-blue-900">
+                    <i class="fab fa-telegram "></i>
+                </a>
+                <a href="#!" class="mr-6 hover:text-blue-900">
+                    <i class="fab fa-google "></i>
+                </a>
+                <a href="#!" class="mr-6 hover:text-blue-900">
+                    <i class="fab fa-instagram "></i>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="mx-6 py-10 text-center md:text-left w-11/12 mx-auto">
-        <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="px-6 py-10 text-center md:text-left" style="background: #0c375e">
+        <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-11/12 mx-auto py-12">
             <div class="">
                 <a href="/" class="flex items-center py-4 px-2">
                     <img src="/storage/{!!str_replace("\\","/",setting('site.logo'))!!}" alt="Logo" class="h-12 w-32">
@@ -34,13 +36,13 @@
                     FOYDALI ALOQLAR
                 </h6>
                 <p class="mb-4">
-                    <a href="#" class="text-gray-600 hover:text-blue-500">Biz haqimizda</a>
+                    <a href="#" class=" hover:text-blue-500">Biz haqimizda</a>
                 </p>
                 <p class="mb-4">
-                    <a href="{{route('faq')}}" class="text-gray-600 hover:text-blue-500">FAQ</a>
+                    <a href="{{route('faq')}}" class=" hover:text-blue-500">FAQ</a>
                 </p>
                 <p class="mb-4">
-                    <a href="#" class="text-gray-600 hover:text-blue-500">Yo'riqnoma</a>
+                    <a href="#" class=" hover:text-blue-500">Yo'riqnoma</a>
                 </p>
             </div>
             <div class="">
@@ -79,7 +81,7 @@
             </div>
         </div>
     </div>
-    <div class="text-center p-6 bg-gray-200">
+    <div class="text-center p-6 bg-gray-200 border-t-2 " style="background: #0c375e">
         <span>© 2022 HOMEDUCATION</span>
     </div>
 </footer>
