@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\CreateController;
-
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,25 +15,36 @@ use App\Http\Controllers\CreateController;
 |
 */
 
-
+#region voyager
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-Route::get('/faq',[FaqController::class,'faq'])->name('faq');
-Route::post('/question',[FaqController::class,'question'])->name('faq.question');
+#endregion
+
+#region application
 Route::get('/create',[CreateController::class,'name'])->name('create.name');
 Route::post('/name_store',[CreateController::class,'name_store'])->name('create.name.store');
+Route::get('/create_category',[CreateController::class,'category'])->name('create.category');
+Route::post('/category_store',[CreateController::class,'category_store'])->name('create.category.store');
+Route::post('/types',[CreateController::class,'types'])->name('create.types');
+Route::get('/parent',[CreateController::class,'parent'])->name('create.parent');
+Route::post('/parent_store',[CreateController::class,'parent_store'])->name('create.parent.store');
+Route::get('/teacher',[CreateController::class,'teacher'])->name('create.teacher');
+Route::post('/teacher_store',[CreateController::class,'teacher_store'])->name('create.teacher.store');
+#endregion
+
+#region faq
+Route::get('/faq',[FaqController::class,'faq'])->name('faq');
+Route::post('/question',[FaqController::class,'question'])->name('faq.question');
+#endregion
+
+#region homepage
+Route::get('/',[HomeController::class,'index'])->name('home.index');
+Route::get('categories',[HomeController::class,'category'])->name('home.category');
+#endregion
 
 
-Route::get('/', function () {
-    return view('homepage.home');
-});
-Route::get('/categories', function () {
-    return view('categories.categories');
-});
-Route::get('/create_categories', function () {
-    return view('applications.create_categories');
-});
+
 Route::get('/parents', function () {
     return view('applications.parents');
 });

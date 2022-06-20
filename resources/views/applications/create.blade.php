@@ -12,11 +12,11 @@
                     @csrf
                     <div class="flex flex-row mx-auto w-9/12">
                         <div class="flex gap-x-2 items-center mx-auto">
-                            <input class="h-4 w-4" type="radio" name="radio" value="parent" id="parent">
+                            <input class="h-4 w-4" type="radio" name="type" value="parent" id="parent">
                             <label class="text-lg cursor-pointer" for="parent">Ota-ona</label>
                         </div>
                         <div class="flex gap-x-2 items-center mx-auto">
-                            <input class="h-4 w-4" type="radio" name="radio" value="teacher" id="teacher">
+                            <input class="h-4 w-4" type="radio" name="type" value="teacher" id="teacher">
                             <label class="text-lg cursor-pointer" for="teacher">O'qituvchi</label>
                         </div>
 

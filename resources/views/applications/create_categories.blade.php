@@ -8,33 +8,15 @@
                 <p class="text-2xl font-semibold mb-3 w-9/12 mx-auto">
                     Kategoriyalardan birini tanlang
                 </p>
-                <form action="" method="" class="my-10">
+                <form action="{{route('create.category.store')}}" method="POST" class="my-10">
+                    @csrf
                     <div class="my-6">
-                        <div class="flex flex-row w-1/2 mx-auto gap-x-4 items-center my-4">
-                            <input type="checkbox"  class="w-4 h-4" id="cat">
-                            <label class="text-xl" for="cat">Matematika</label>
-                        </div>
-                        <div class="flex flex-row w-1/2 mx-auto gap-x-4 items-center my-4">
-                            <input type="checkbox"  class="w-4 h-4" id="cat1">
-                            <label class="text-xl" for="cat1">Matematika</label>
-                        </div>
-                        <div class="flex flex-row w-1/2 mx-auto gap-x-4 items-center my-4">
-                            <input type="checkbox"  class="w-4 h-4" id="cat2">
-                            <label class="text-xl" for="cat2">Matematika</label>
-                        </div>
-                        <div class="flex flex-row w-1/2 mx-auto gap-x-4 items-center my-4">
-                            <input type="checkbox"  class="w-4 h-4" id="cat3">
-                            <label class="text-xl" for="cat3">Matematika</label>
-                        </div>
-                        <div class="flex flex-row w-1/2 mx-auto gap-x-4 items-center my-4">
-                            <input type="checkbox"  class="w-4 h-4" id="cat4">
-                            <label class="text-xl" for="cat4">Matematika</label>
-                        </div>
-                        <div class="flex flex-row w-1/2 mx-auto gap-x-4 items-center my-4">
-                            <input type="checkbox"  class="w-4 h-4" id="cat5">
-                            <label class="text-xl" for="cat5">Matematika</label>
-                        </div>
-
+                        @foreach($categories as $category)
+                            <div class="flex flex-row w-1/2 mx-auto gap-x-4 items-center my-4">
+                                <input type="checkbox" name="category_name" value="{{$category->name}}" class="w-4 h-4" id="{{$category->name}}">
+                                <label class="text-xl" for="{{$category->name}}">{{$category->name}}</label>
+                            </div>
+                        @endforeach
                     </div>
                     <div class="flex mx-auto my-12 w-9/12 mx-auto">
                         <a onclick="myFunction()">
