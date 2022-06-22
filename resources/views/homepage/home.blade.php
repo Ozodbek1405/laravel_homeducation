@@ -4,10 +4,10 @@
 
     <div class=" pt-32 pb-8" style="background: #0c375e">
         <div class=" flex flex-row gap-x-4 w-11/12 mx-auto text-white">
-            <div class="w-1/2 mx-auto">
+            <div class="w-1/2 mx-auto md:block hidden">
                 <img class="" src="https://demo.themexbd.com/rtl/acadamy/wp-content/uploads/2022/03/slider-image.png" alt="">
             </div>
-            <div class="my-auto w-2/5 mx-auto">
+            <div class="my-auto md:w-2/5 w-full mx-auto">
                 <p class="text-base font-medium mb-3">WE ARE READY EDUTION</p>
                 <h1 class="text-3xl mb-8 font-medium">Exorbitant learning, more likelihood</h1>
                 <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -38,8 +38,8 @@
             {{--  biz haqimizda  --}}
     <div class="w-11/12 mx-auto mb-24">
         <h1 class="text-center font-semibold text-5xl mb-12 border-b-2 border-blue-900 pb-6">Biz haqimizda</h1>
-        <div class="grid grid-cols-2 text-lg">
-            <div class="col-span-1">
+        <div class="grid grid-cols-2 text-lg gap-x-4">
+            <div class="md:col-span-1 col-span-2">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <ul class="mt-4">
                     <li class="flex flex-row items-center gap-x-2">
@@ -56,7 +56,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-span-1">
+            <div class="md:col-span-1 col-span-2 md:mt-0 mt-6">
                 <p class="mb-8">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                     velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -69,13 +69,13 @@
         {{--   telegram bot   --}}
     <div class="py-24 my-24" style="background: #0c375e">
         <div class="w-11/12 mx-auto grid grid-cols-12 gap-x-4 items-center ">
-            <div class="col-span-8 my-auto text-white">
+            <div class="md:col-span-8 col-span-12 my-auto text-white">
                 <h1 class="text-3xl mb-4 font-medium">Bot orqali ariza qoldirish</h1>
                 <p class="text-lg">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="col-span-4">
+            <div class="md:col-span-4 col-span-12 md:mt-0 mt-6">
                <button class="border-2 rounded-3xl px-8 py-2 text-2xl text-white border-white hover:bg-red-700">
                    <a href="#">Botga o'tish</a>
                </button>
@@ -86,7 +86,7 @@
 
     <div class="w-11/12 mx-auto mb-24">
         <div class="grid grid-cols-2 gap-4">
-            <div class="col-span-1">
+            <div class="lg:col-span-1 col-span-2">
                 <h2 class="text-red-600 text-2xl my-8">Nima uchun bizni tanlaysiz</h2>
                 <h1 class="text-4xl font-bold text-gray-600 mb-6">Sizning maqsadingiz - bizning yutug'imiz</h1>
                 <p class="text-lg">Nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua. At vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergren, no sea takimata sanctus.</p>
@@ -103,7 +103,7 @@
                     <p class="text-lg">Vero eos et accusam et justo duo dolores et rebum. Stet clita kasd gubergrenv</p>
                 </div>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1 lg:block hidden">
                 <img src="https://preview.tailwindtemplates.co/plain/assets/images/about.svg" alt="#">
             </div>
         </div>

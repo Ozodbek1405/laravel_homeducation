@@ -36,13 +36,14 @@ class ApplicationTeacherRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => ('login.name.required'),
-            'number_of_children.required' => ('login.name.unique'),
+            'name.required' => ('Ism-familya kiriting'),
+            'age_teacher.required' => ('login.name.unique'),
             'phone_number.required' => ('login.email.required'),
-            'about_children.required' => ('login.email.email'),
-            'children_age.required' => ('login.email.unique'),
-            'teacher_gender.required' => ('login.password.required'),
-            'science_lang.required' => ('login.password.min'),
+            'phone_number.min' => ('login.email.required'),
+            'speciality_science_teacher.required' => ('login.email.email'),
+            'degree_teacher.required' => ('login.email.unique'),
+            'lesson_lang.required' => ('login.password.required'),
+            'resume.required' => ('login.password.min'),
         ];
     }
     public function getValidatorInstance()

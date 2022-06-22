@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ApplicationParentRequest;
+use App\Http\Requests\ApplicationTeacherRequest;
 use App\Models\Categories;
 use Illuminate\Http\Request;
 use App\Models\Information;
@@ -46,20 +47,25 @@ class CreateController extends Controller
 
     public function parent(){
 
-        return view('applications.parents');
+        return view('applications.teachers');
 
     }
 
     public function parent_store(ApplicationParentRequest $request){
 
         $data = $request->validated();
-        $application = Information::create($data);
+        Information::create($data);
 
+        return redirect()->route("home.index");
 
     }
 
-    public function teacher(){
+    public function teacher(ApplicationTeacherRequest $request){
 
+        $data = $request->validated();
+        Information::create($data);
+
+        return redirect()->route("home.index");
     }
 
     public function teacher_store(){

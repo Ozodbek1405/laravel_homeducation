@@ -29,8 +29,8 @@ Route::post('/category/store',[CreateController::class,'category_store'])->name(
 Route::post('/types',[CreateController::class,'types'])->name('create.types');
 Route::get('/parent',[CreateController::class,'parent'])->name('create.parent');
 Route::post('/parent/store',[CreateController::class,'parent_store'])->name('create.parent.store');
-Route::get('/teacher/{application}',[CreateController::class,'teacher'])->name('create.teacher');
-Route::post('/teacher/{application}/store',[CreateController::class,'teacher_store'])->name('create.teacher.store');
+Route::get('/teacher',[CreateController::class,'teacher'])->name('create.teacher');
+Route::post('/teacher/store',[CreateController::class,'teacher_store'])->name('create.teacher.store');
 #endregion
 
 #region faq
