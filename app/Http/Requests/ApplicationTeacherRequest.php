@@ -25,23 +25,24 @@ class ApplicationTeacherRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'email' => 'required|email|unique:users',
-            'phone_number' =>  'numeric|unique:users|min:13',
-            'password' => 'required|confirmed|min:8',
-            'password_confirmation' => 'required|min:8',
+            'age_teacher' => 'required',
+            'phone_number' =>  'required|min:13',
+            'speciality_science_teacher' => 'required',
+            'degree_teacher' => 'required',
+            'lesson_lang' => 'required',
+            'resume' => 'required',
         ];
     }
     public function messages()
     {
         return [
-            'name.required' => __('login.name.required'),
-            'name.unique' => __('login.name.unique'),
-            'email.required' => __('login.email.required'),
-            'email.email' => __('login.email.email'),
-            'email.unique' => __('login.email.unique'),
-            'password.required' => __('login.password.required'),
-            'password.min' => __('login.password.min'),
-            'password.confirmed' => __('login.password.confirmed'),
+            'name.required' => ('login.name.required'),
+            'number_of_children.required' => ('login.name.unique'),
+            'phone_number.required' => ('login.email.required'),
+            'about_children.required' => ('login.email.email'),
+            'children_age.required' => ('login.email.unique'),
+            'teacher_gender.required' => ('login.password.required'),
+            'science_lang.required' => ('login.password.min'),
         ];
     }
     public function getValidatorInstance()

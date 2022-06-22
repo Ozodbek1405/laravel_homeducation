@@ -8,14 +8,15 @@
                 <p class="text-2xl font-semibold mb-3 text-center">
                     Ma'lumotlaringizni kiriting
                 </p>
-                <form action="" method="" class="my-10">
+                <form action="{{route('create.teacher.store')}}" method="POST" class="my-10">
+                    @csrf
                     <div class="my-6">
                         <div class="my-4">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
                                 Ism familyangizni kiriting
                             </label>
                             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight
-                             focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Ism familyangizni kiriting">
+                             focus:outline-none focus:shadow-outline" name="name" type="text" placeholder="Ism familyangizni kiriting">
                         </div>
 
                         <div class="my-4">
@@ -23,15 +24,15 @@
                                Yoshingiz
                             </label>
                             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight
-                             focus:outline-none focus:shadow-outline" id="username" type="number" placeholder="Yoshingiz...">
+                             focus:outline-none focus:shadow-outline" name="age_teacher" type="number" placeholder="Yoshingiz...">
                         </div>
 
                         <div class="my-4">
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
                                 Mutaxasisligingiz qaysi fanlar boyicha
                             </label>
-                            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border
-                             border-gray-300 focus:outline-none" placeholder="Masalan, bir nechta fanlar..."></textarea>
+                            <textarea rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border
+                             border-gray-300 focus:outline-none" name="speciality_science_teacher" placeholder="Masalan, bir nechta fanlar..."></textarea>
                         </div>
 
                         <div class="grid grid-cols-2 gap-x-4 my-4">
@@ -42,19 +43,19 @@
                                 <div class="mt-2">
                                     <div>
                                         <label class="inline-flex items-center">
-                                            <input type="radio" class="form-radio" name="radio" value="1" checked>
+                                            <input type="radio" class="form-radio" name="degree_teacher" value="oliy">
                                             <span class="ml-2">Oliy</span>
                                         </label>
                                     </div>
                                     <div>
                                         <label class="inline-flex items-center">
-                                            <input type="radio" class="form-radio" name="radio" value="2">
+                                            <input type="radio" class="form-radio" name="degree_teacher" value="tugallanmagan_oliy">
                                             <span class="ml-2">Tugallanmagan oliy</span>
                                         </label>
                                     </div>
                                     <div>
                                         <label class="inline-flex items-center">
-                                            <input type="radio" class="form-radio" name="radio" value="3">
+                                            <input type="radio" class="form-radio" name="degree_teacher" value="o'rta_maxsus">
                                             <span class="ml-2">O'rta maxsus</span>
                                         </label>
                                     </div>
@@ -68,14 +69,14 @@
                                 <div class="mt-2">
                                     <div>
                                         <label class="inline-flex items-center">
-                                            <input type="radio" class="form-radio" name="radio" value="2">
+                                            <input type="radio" class="form-radio" name="lesson_lang" value="ha">
                                             <span class="ml-2">Ha</span>
                                         </label>
                                     </div>
                                     <div>
                                         <label class="inline-flex items-center">
-                                            <input type="radio" class="form-radio" name="radio" value="2">
-                                            <span class="ml-2">Yoq</span>
+                                            <input type="radio" class="form-radio" name="lesson_lang" value="yoq">
+                                            <span class="ml-2">Yo'q</span>
                                         </label>
                                     </div>
                                 </div>
@@ -84,7 +85,8 @@
 
                         <div class="my-4">
                             <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="file_input">Rezumengizni yuklang</label>
-                            <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file">
+                            <input class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400
+                            focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" name="resume" type="file">
                         </div>
 
                         <div class="my-6">
@@ -93,7 +95,7 @@
                             </label>
                             <input class="shadow appearance-none border border-gray-300 rounded w-full
                             py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                                   id="phone_number" type="text" placeholder="+998 ** *** ** **">
+                                   id="phone_number" name="phone_number" type="text" placeholder="+998 ** *** ** **">
                         </div>
 
                     </div>

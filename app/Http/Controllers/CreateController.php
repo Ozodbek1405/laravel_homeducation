@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ApplicationParentRequest;
 use App\Models\Categories;
 use Illuminate\Http\Request;
 use App\Models\Information;
@@ -13,39 +14,47 @@ class CreateController extends Controller
     }
 
     public function name_store(Request $request){
-        $request->validate([
+        $data = $request->validate([
             'type' => 'required'
         ]);
-        $name = new Information;
-        $name->type = $request->input('type');
-        $name->save();
-        return redirect()->route('create.category');
+        $application = Information::create($data);
+        return redirect()->route('create.category',$application->id);
     }
 
     public function category(){
+
         $categories = Categories::all();
         return view('applications.create_categories',compact('categories'));
+
     }
 
-    public function category_store(Request $request,Information $information){
+    public function category_store(Request $request,Information $application){
         $request->validate([
             'category_name' => 'required'
         ]);
-        $cat = new Information;
-        $cat->category_name = $request->input('category_name');
-        $cat->save();
-        return redirect()->route('create.types');
+        $checkbox = implode(",", $request->get('category_name'));
+        Information::create(['category_name' => $checkbox]);
+
+        return redirect()->route("create.parent",$application->id);
     }
 
-    public function types(){
+    public function types(Information $application){
+
+        return redirect()->route("create.parent",$application->id);
 
     }
 
     public function parent(){
 
+        return view('applications.parents');
+
     }
 
-    public function parent_store(){
+    public function parent_store(ApplicationParentRequest $request){
+
+        $data = $request->validated();
+        $application = Information::create($data);
+
 
     }
 

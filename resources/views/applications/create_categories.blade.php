@@ -13,7 +13,7 @@
                     <div class="my-6">
                         @foreach($categories as $category)
                             <div class="flex flex-row w-1/2 mx-auto gap-x-4 items-center my-4">
-                                <input type="checkbox" name="category_name" value="{{$category->name}}" class="w-4 h-4" id="{{$category->name}}">
+                                <input type="checkbox" name="category_name[]" value="{{$category->name}}" class="w-4 h-4" id="{{$category->name}}">
                                 <label class="text-xl" for="{{$category->name}}">{{$category->name}}</label>
                             </div>
                         @endforeach

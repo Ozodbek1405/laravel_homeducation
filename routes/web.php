@@ -23,14 +23,14 @@ Route::group(['prefix' => 'admin'], function () {
 
 #region application
 Route::get('/create',[CreateController::class,'name'])->name('create.name');
-Route::post('/name_store',[CreateController::class,'name_store'])->name('create.name.store');
-Route::get('/create_category',[CreateController::class,'category'])->name('create.category');
-Route::post('/category_store',[CreateController::class,'category_store'])->name('create.category.store');
+Route::post('/name/store',[CreateController::class,'name_store'])->name('create.name.store');
+Route::get('/create_category/{application}',[CreateController::class,'category'])->name('create.category');
+Route::post('/category/store',[CreateController::class,'category_store'])->name('create.category.store');
 Route::post('/types',[CreateController::class,'types'])->name('create.types');
 Route::get('/parent',[CreateController::class,'parent'])->name('create.parent');
-Route::post('/parent_store',[CreateController::class,'parent_store'])->name('create.parent.store');
-Route::get('/teacher',[CreateController::class,'teacher'])->name('create.teacher');
-Route::post('/teacher_store',[CreateController::class,'teacher_store'])->name('create.teacher.store');
+Route::post('/parent/store',[CreateController::class,'parent_store'])->name('create.parent.store');
+Route::get('/teacher/{application}',[CreateController::class,'teacher'])->name('create.teacher');
+Route::post('/teacher/{application}/store',[CreateController::class,'teacher_store'])->name('create.teacher.store');
 #endregion
 
 #region faq
