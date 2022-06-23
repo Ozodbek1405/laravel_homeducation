@@ -40,7 +40,8 @@ Route::post('/question',[FaqController::class,'question'])->name('faq.question')
 
 #region homepage
 Route::get('/',[HomeController::class,'index'])->name('home.index');
-Route::get('categories',[HomeController::class,'category'])->name('home.category');
+Route::get('/categories',[HomeController::class,'category'])->name('home.category');
+Route::get('/instructions',[HomeController::class,'instruction'])->name('home.instruction');
 #endregion
 
 

@@ -5,17 +5,17 @@
                 <span>Ijtimoiy tarmoqlarda biz bilan bog'laning:</span>
             </div>
             <div class="flex justify-center text-white">
-                <a href="#!" class="mr-6 hover:text-blue-900">
-                    <i class="fab fa-facebook-f "></i>
+                <a href="{{setting('site.site_facebook_link')}}" class="mr-6 hover:text-blue-900">
+                    <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="#!" class="mr-6 hover:text-blue-900">
-                    <i class="fab fa-telegram "></i>
+                <a href="{{setting('site.site_telegram_link')}}" class="mr-6 hover:text-blue-900">
+                    <i class="fab fa-telegram"></i>
                 </a>
-                <a href="#!" class="mr-6 hover:text-blue-900">
-                    <i class="fab fa-google "></i>
+                <a href="{{setting('site.site_gmail_link')}}" class="mr-6 hover:text-blue-900">
+                    <i class="fab fa-google"></i>
                 </a>
-                <a href="#!" class="mr-6 hover:text-blue-900">
-                    <i class="fab fa-instagram "></i>
+                <a href="{{setting('site.site_instagram_link')}}" class="mr-6 hover:text-blue-900">
+                    <i class="fab fa-instagram"></i>
                 </a>
             </div>
         </div>
@@ -33,7 +33,7 @@
             </div>
             <div class="">
                 <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                    FOYDALI ALOQLAR
+                    FOYDALI ALOQALAR
                 </h6>
                 <p class="mb-4">
                     <a href="#" class=" hover:text-blue-500">Biz haqimizda</a>
@@ -42,7 +42,7 @@
                     <a href="{{route('faq')}}" class=" hover:text-blue-500">FAQ</a>
                 </p>
                 <p class="mb-4">
-                    <a href="#" class=" hover:text-blue-500">Yo'riqnoma</a>
+                    <a href="{{route('home.instruction')}}" class=" hover:text-blue-500">Yo'riqnoma</a>
                 </p>
             </div>
             <div class="">

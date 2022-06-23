@@ -23,12 +23,12 @@
            <div class="container mx-auto px-10">
                <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
                    @foreach($categories as $category)
-                       <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg cursor-pointer">
+                       <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg">
                            <div class="">
                                <img src=" {{ asset('storage/'.$category->icon) }}" alt="" class="h-12 w-12">
                            </div>
                            <h3 class="text-lg font-bold text-blue-900 hover:text-red-600">
-                               {{$category->name}}
+                               <a href="/categories">{{$category->name}}</a>
                            </h3>
                        </div>
                    @endforeach

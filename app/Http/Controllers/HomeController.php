@@ -16,4 +16,8 @@ class HomeController extends Controller
         $categories = Categories::all();
         return view('categories.categories',compact('categories'));
     }
+
+    public function instruction(){
+        return view('homepage.instructions');
+    }
 }
