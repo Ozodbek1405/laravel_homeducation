@@ -77,7 +77,7 @@
             </div>
             <div class="md:col-span-4 col-span-12 md:mt-0 mt-6">
                <button class="border-2 rounded-3xl px-8 py-2 text-2xl text-white border-white hover:bg-red-700">
-                   <a href="#">Botga o'tish</a>
+                   <a href="{{setting('site.telegram_bot_link')}}">Botga o'tish</a>
                </button>
             </div>
         </div>

@@ -2,9 +2,9 @@
 
 @section('content')
 
-    <div class="shadow-2xl my-32 border px-10 rounded-md w-full md:w-6/12 mx-auto grid grid-flow-col gap-4 my-5 flex flex-wrap md:flex-wrap-reverse mt-32">
+    <div class="shadow-2xl my-32 border px-10 rounded-md xl:w-1/2 w-11/12 mx-auto grid grid-flow-col gap-4 my-5 flex flex-wrap md:flex-wrap-reverse mt-32">
         <div сlass="grid-rows-12">
-            <div class="container p-5">
+            <div class="container sm:p-5 p-2">
                 <p class="text-2xl font-semibold mb-3 text-center">
                     Ma'lumotlaringizni kiriting
                 </p>
@@ -36,7 +36,7 @@
                         </div>
 
                         <div class="grid grid-cols-2 gap-x-4 my-4">
-                            <div class="block">
+                            <div class="block sm:col-span-1 col-span-2">
                                 <label class="block text-gray-700 text-sm font-bold mb-2">
                                     Ma’lumotingiz
                                 </label>
@@ -62,7 +62,7 @@
                                 </div>
                             </div>
 
-                            <div class="block">
+                            <div class="block sm:col-span-1 col-span-2 sm:mt-0 mt-4">
                                 <label class="block text-gray-700 text-sm font-bold mb-2">
                                     Faningizni rus tilida o`ta olasizmi?
                                 </label>
@@ -100,8 +100,8 @@
 
                     </div>
 
-                    <div class="flex mx-auto my-12 w-9/12 mx-auto">
-                        <a onclick="myFunction()">
+                    <div class="flex sm:flex-row flex-col mx-auto my-12 w-9/12 mx-auto gap-x-2">
+                        <a onclick="myFunction()" class="mx-auto">
                             <input type="button"
                                    class="mx-auto cursor-pointer bg-white border border-2 border-blue-900 text-blue-900 hover:text-red-600 hover:border-red-600 font-normal text-2xl py-3 px-14 rounded-2xl"
                                    value="Orqaga">
@@ -112,8 +112,8 @@
                             }
                         </script>
                         <input type="submit" id="next"
-                               class="mx-auto cursor-pointer text-white font-normal text-2xl py-3 px-14 rounded-2xl"
-                               name="" value="Yuborish">
+                               class="mx-auto cursor-pointer text-white font-normal text-2xl py-3 px-14 rounded-2xl sm:mt-0 mt-6"
+                               value="Yuborish">
                     </div>
                 </form>
             </div>

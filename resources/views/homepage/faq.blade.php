@@ -28,7 +28,7 @@
         <form action="{{route('faq.question')}}" method="POST">
             @csrf
             <div class="flex relative mx-auto w-full">
-                <input class="bg-gray-400  h-16 pl-16 pr-6 rounded-md focus:outline-none focus:border-yellow-500 focus:bg-white w-full text-black lg:md:text-base text-base hover:bg-gray-400"
+                <input class="bg-gray-400  h-16 sm:pl-16 pl-4 pr-6 rounded-md focus:outline-none focus:border-yellow-500 focus:bg-white w-full text-black lg:md:text-base text-base hover:bg-gray-400"
                        type="text" name="questions" placeholder="Savolingizni qoldiring...   " required/>
                 <input type="submit" class="rounded-md bg-gray-400 cursor-pointer ml-4 px-5 text-xl hover:text-white hover:bg-red-500" value="Yuborish">
             </div>

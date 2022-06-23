@@ -26,16 +26,16 @@
             </div>
             <!-- Secondary Navbar items -->
             <div class="hidden lg:flex items-center justify-center">
-                <a href="#!" class="mr-6 text-blue-900 hover:text-red-600">
+                <a href="{{setting('site.site_telegram_link')}}" class="mr-6 text-blue-900 hover:text-red-600">
                     <i class="fab fa-telegram"></i>
                 </a>
-                <a href="#!" class="mr-6 text-blue-900 hover:text-red-600">
+                <a href="{{setting('site.site_instagram_link')}}" class="mr-6 text-blue-900 hover:text-red-600">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="#!" class="mr-6 text-blue-900 hover:text-red-600">
+                <a href="{{setting('site.site_facebook_link')}}" class="mr-6 text-blue-900 hover:text-red-600">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="#!" class="mr-6 text-blue-900 hover:text-red-600">
+                <a href="{{setting('site.site_gmail_link')}}" class="mr-6 text-blue-900 hover:text-red-600">
                     <i class="fab fa-google"></i>
                 </a>
             </div>
@@ -61,16 +61,16 @@
             <li class="pb-4"><a href="{{setting('site.admin_telegram_link')}}" class="p-2 text-white font-semibold hover:text-red-600 transition duration-300 rounded-lg" style="background: #0c375e">Admin bilan bog'lanish</a></li>
         </ul>
         <div class="items-center justify-center m-8">
-            <a href="#!" class="mr-6 text-blue-900 hover:text-red-600">
+            <a href="{{setting('site.site_telegram_link')}}" class="mr-6 text-blue-900 hover:text-red-600">
                 <i class="fab fa-telegram"></i>
             </a>
-            <a href="#!" class="mr-6 text-blue-900 hover:text-red-600">
+            <a href="{{setting('site.site_instagram_link')}}" class="mr-6 text-blue-900 hover:text-red-600">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="#!" class="mr-6 text-blue-900 hover:text-red-600">
+            <a href="{{setting('site.site_facebook_link')}}" class="mr-6 text-blue-900 hover:text-red-600">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#!" class="mr-6 text-blue-900 hover:text-red-600">
+            <a href="{{setting('site.site_gmail_link')}}" class="mr-6 text-blue-900 hover:text-red-600">
                 <i class="fab fa-google"></i>
             </a>
         </div>
