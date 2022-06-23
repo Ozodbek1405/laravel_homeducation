@@ -20,4 +20,8 @@ class HomeController extends Controller
     public function instruction(){
         return view('homepage.instructions');
     }
+
+    public function about_us(){
+        return view('homepage.about_us');
+    }
 }

@@ -42,6 +42,7 @@ Route::post('/question',[FaqController::class,'question'])->name('faq.question')
 Route::get('/',[HomeController::class,'index'])->name('home.index');
 Route::get('/categories',[HomeController::class,'category'])->name('home.category');
 Route::get('/instructions',[HomeController::class,'instruction'])->name('home.instruction');
+Route::get('/about_us',[HomeController::class,'about_us'])->name('home.about_us');
 #endregion
 
 

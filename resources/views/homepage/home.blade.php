@@ -28,7 +28,7 @@
                                <img src=" {{ asset('storage/'.$category->icon) }}" alt="" class="h-12 w-12">
                            </div>
                            <h3 class="text-lg font-bold text-blue-900 hover:text-red-600">
-                               <a href="/categories">{{$category->name}}</a>
+                               <a href="{{route('home.category')}}">{{$category->name}}</a>
                            </h3>
                        </div>
                    @endforeach
@@ -61,7 +61,7 @@
                     velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <a href="#" class="border-2 px-4 py-3 rounded-lg font-medium cursor-pointer hover:text-white hover:bg-blue-900" style="border-color: #0c375e">Ko'proq o'qish</a>
+                <a href="{{route('home.about_us')}}" class="border-2 px-4 py-3 rounded-lg font-medium cursor-pointer hover:text-white hover:bg-blue-900" style="border-color: #0c375e">Ko'proq o'qish</a>
             </div>
         </div>
     </div>

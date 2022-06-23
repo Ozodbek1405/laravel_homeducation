@@ -36,7 +36,7 @@
                     FOYDALI ALOQALAR
                 </h6>
                 <p class="mb-4">
-                    <a href="#" class=" hover:text-blue-500">Biz haqimizda</a>
+                    <a href="{{route('home.about_us')}}" class=" hover:text-blue-500">Biz haqimizda</a>
                 </p>
                 <p class="mb-4">
                     <a href="{{route('faq')}}" class=" hover:text-blue-500">FAQ</a>

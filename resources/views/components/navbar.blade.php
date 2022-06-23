@@ -10,13 +10,13 @@
                 </div>
                 <!-- Primary Navbar items -->
                 <div class="hidden lg:flex items-center space-x-4">
-                    <a href="/categories" class="p-2 text-white font-semibold hover:text-red-600 transition duration-300 rounded-lg"
+                    <a href="{{route('home.category')}}" class="p-2 text-white font-semibold hover:text-red-600 transition duration-300 rounded-lg"
                        style="background: #0c375e">Kategoriyalar
                     </a>
                     <a href="{{route('create.name')}}" class="p-2 text-white font-semibold hover:text-red-500 transition duration-300 rounded-lg"
                        style="background: #0c375e">Ariza qoldirish
                     </a>
-                    <a href="" class="p-2 text-white font-semibold hover:text-red-600 transition duration-300 rounded-lg"
+                    <a href="{{route('home.about_us')}}" class="p-2 text-white font-semibold hover:text-red-600 transition duration-300 rounded-lg"
                        style="background: #0c375e">Biz haqimizda
                     </a>
                     <a href="{{setting('site.admin_telegram_link')}}" class="p-2 text-white font-semibold hover:text-red-600 transition duration-300
@@ -55,9 +55,9 @@
     <!-- mobile menu -->
     <div class="hidden mobile-menu">
         <ul class="py-4 ml-8">
-            <li class="active"> <a href="/categories" class="p-2 text-white font-semibold hover:text-red-600 transition duration-300 rounded-lg" style="background: #0c375e">Kategoriyalar</a></li>
+            <li class="active"> <a href="{{route('home.category')}}" class="p-2 text-white font-semibold hover:text-red-600 transition duration-300 rounded-lg" style="background: #0c375e">Kategoriyalar</a></li>
             <li class="my-6">  <a href="{{route('create.name')}}" class="p-2 text-white font-semibold hover:text-red-500 transition duration-300 rounded-lg" style="background: #0c375e">Ariza qoldirish</a></li>
-            <li class="pb-6"><a href="" class="p-2 text-white font-semibold hover:text-red-600 transition duration-300 rounded-lg" style="background: #0c375e">Biz haqimizda</a></li>
+            <li class="pb-6"><a href="{{route('home.about_us')}}" class="p-2 text-white font-semibold hover:text-red-600 transition duration-300 rounded-lg" style="background: #0c375e">Biz haqimizda</a></li>
             <li class="pb-4"><a href="{{setting('site.admin_telegram_link')}}" class="p-2 text-white font-semibold hover:text-red-600 transition duration-300 rounded-lg" style="background: #0c375e">Admin bilan bog'lanish</a></li>
         </ul>
         <div class="items-center justify-center m-8">
