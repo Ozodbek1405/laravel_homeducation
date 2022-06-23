@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 <div class="w-11/12 mx-auto mb-24">
     <h1 class="text-center sm:text-5xl text-3xl font-bold mt-32 mb-12 ">Kategoriyalar</h1>
     <div class="container mx-auto px-10">
@@ -17,16 +16,14 @@
                         <p class="text-gray-700 text-base mb-4">
                             {{$category->description}}
                         </p>
-                        <button type="button" class="float-right mb-4 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 ">Ariza qoldirish</button>
+                        <button type="button" class="float-right mb-4 inline-block px-6 py-2.5 bg-blue-900 text-white
+                            font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-600 ">Ariza qoldirish
+                        </button>
                     </div>
                 </div>
             @endforeach
         </div>
     </div>
 </div>
-
-
-
-
-
+    
 @endsection

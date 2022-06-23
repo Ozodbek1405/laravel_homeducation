@@ -8,7 +8,7 @@
                 <p class="text-2xl font-semibold mb-3 text-center">
                     Ma'lumotlaringizni kiriting
                 </p>
-                <form action="{{route('create.parent.store')}}" method="POST" class="my-10">
+                <form action="{{route('create.parent.store',$application)}}" method="POST" class="my-10">
                     @csrf
                     <div class="my-6">
                         <div class="my-4">

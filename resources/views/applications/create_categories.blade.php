@@ -8,7 +8,7 @@
                 <p class="text-2xl font-semibold mb-3 text-center">
                     Kategoriyalardan birini tanlang
                 </p>
-                <form action="{{route('create.category.store')}}" method="POST" class="my-10">
+                <form action="{{route('create.category.store',$application)}}" method="POST" class="my-10">
                     @csrf
                     <div class="my-6">
                         @foreach($categories as $category)
@@ -18,20 +18,10 @@
                             </div>
                         @endforeach
                     </div>
-                    <div class="flex sm:flex-row flex-col mx-auto my-12 w-9/12 mx-auto gap-x-2">
-                        <a onclick="myFunction()" class="mx-auto">
-                            <input type="button"
-                                   class="mx-auto cursor-pointer bg-white border border-2 border-blue-900 text-blue-900 hover:text-red-600 hover:border-red-600 font-normal text-2xl py-3 px-14 rounded-2xl"
-                                   value="Orqaga">
-                        </a>
-                        <script>
-                            function myFunction() {
-                                window.history.back();
-                            }
-                        </script>
+                    <div class="flex mx-auto my-12">
                         <input type="submit" id="next"
-                               class="mx-auto cursor-pointer text-white font-normal text-2xl py-3 px-14 rounded-2xl sm:mt-0 mt-6"
-                               value="Yuborish">
+                               class="mx-auto cursor-pointer text-white font-normal text-2xl py-3 px-14 rounded-2xl"
+                               name="" value="Yuborish">
                     </div>
                 </form>
             </div>

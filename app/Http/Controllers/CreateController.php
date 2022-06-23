@@ -6,7 +6,7 @@ use App\Http\Requests\ApplicationParentRequest;
 use App\Http\Requests\ApplicationTeacherRequest;
 use App\Models\Categories;
 use Illuminate\Http\Request;
-use App\Models\Information;
+use App\Models\Application;
 
 class CreateController extends Controller
 {
@@ -18,57 +18,54 @@ class CreateController extends Controller
         $data = $request->validate([
             'type' => 'required'
         ]);
-        $application = Information::create($data);
+        $application = Application::create($data);
         return redirect()->route('create.category',$application->id);
     }
 
-    public function category(){
+    public function category(Application $application){
 
         $categories = Categories::all();
-        return view('applications.create_categories',compact('categories'));
+        return view('applications.create_categories',compact('categories','application'));
 
     }
 
-    public function category_store(Request $request,Information $application){
+    public function category_store(Request $request, Application $application){
         $request->validate([
             'category_name' => 'required'
         ]);
         $checkbox = implode(",", $request->get('category_name'));
-        Information::create(['category_name' => $checkbox]);
-
-        return redirect()->route("create.parent",$application->id);
+        $application->update(['category_name' => $checkbox]);
+        if($application->type=='parent'){
+            return redirect()->route('create.parent',$application->id);
+        }
+        elseif ($application->type=='teacher'){
+            return redirect()->route('create.teacher',$application->id);
+        }
     }
 
-    public function types(Information $application){
+    public function parent(Application $application){
 
-        return redirect()->route("create.parent",$application->id);
-
-    }
-
-    public function parent(){
-
-        return view('applications.teachers');
+        return view('applications.parents',compact('application'));
 
     }
 
-    public function parent_store(ApplicationParentRequest $request){
+    public function parent_store(ApplicationParentRequest $request, Application $application){
 
         $data = $request->validated();
-        Information::create($data);
+        $application->update($data);
 
         return redirect()->route("home.index");
 
     }
 
-    public function teacher(ApplicationTeacherRequest $request){
-
-        $data = $request->validated();
-        Information::create($data);
-
-        return redirect()->route("home.index");
+    public function teacher(Application $application){
+        return view('applications.teachers',compact('application'));
     }
 
-    public function teacher_store(){
+    public function teacher_store(ApplicationTeacherRequest $request,Application $application){
+        $data = $request->validated();
+        $application->update($data);
 
+        return redirect()->route("home.index");
     }
 }
