@@ -23,7 +23,7 @@
            <div class="container mx-auto px-10">
                <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
                    @foreach($categories as $category)
-                       <a href="{{route('home.category',['$category' => $category->id])}}">
+                       <a href="{{route('home.category')}}">
                            <div class="category transition duration-200 flex gap-x-2 items-center p-3 rounded-lg">
                                <div class="">
                                    <img src=" {{ asset('storage/'.$category->icon) }}" alt="" class="h-12 w-12">

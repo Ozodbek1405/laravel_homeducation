@@ -40,6 +40,8 @@ Route::post('/question',[FaqController::class,'question'])->name('faq.question')
 #region homepage
 Route::get('/',[HomeController::class,'index'])->name('home.index');
 Route::get('/categories',[HomeController::class,'category'])->name('home.category');
+Route::post('/category_store',[HomeController::class,'category_store'])->name('home.category.store');
+Route::post('/create_type/{application}',[HomeController::class,'type_store'])->name('create.type.store');
 Route::get('/instructions',[HomeController::class,'instruction'])->name('home.instruction');
 Route::get('/about_us',[HomeController::class,'about_us'])->name('home.about_us');
 #endregion

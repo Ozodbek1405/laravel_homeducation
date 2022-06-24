@@ -121,7 +121,6 @@
             </div>
         </div>
     </div>
-
     <script src='https://unpkg.com/imask'></script>
     <script>
         var element = document.getElementById('phone_number');
