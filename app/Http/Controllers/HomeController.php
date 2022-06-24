@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Application;
+use App\Models\Instruction;
 use Illuminate\Http\Request;
 use App\Models\Categories;
 
@@ -42,7 +43,8 @@ class HomeController extends Controller
     }
 
     public function instruction(){
-        return view('homepage.instructions');
+        $instructions = Instruction::all();
+        return view('homepage.instructions',compact('instructions'));
     }
 
     public function about_us(){
