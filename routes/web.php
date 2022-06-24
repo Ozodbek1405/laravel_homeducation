@@ -45,12 +45,3 @@ Route::get('/about_us',[HomeController::class,'about_us'])->name('home.about_us'
 #endregion
 
 
-
-Route::get('/parents', function () {
-    return view('applications.parents');
-});
-Route::get('/teachers', function () {
-    return view('applications.teachers');
-});
-
-

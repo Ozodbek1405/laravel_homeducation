@@ -16,14 +16,16 @@
                         <p class="text-gray-700 text-base mb-4">
                             {{$category->description}}
                         </p>
-                        <button type="button" class="float-right mb-4 inline-block px-6 py-2.5 bg-blue-900 text-white
-                            font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-600 ">Ariza qoldirish
-                        </button>
+                        <a href="{{route('create.name',$category->id)}}">
+                            <button type="button" class="float-right mb-4 inline-block px-6 py-2.5 bg-blue-900 text-white
+                                font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-600 ">Ariza qoldirish
+                            </button>
+                        </a>
                     </div>
                 </div>
             @endforeach
         </div>
     </div>
 </div>
-    
+
 @endsection

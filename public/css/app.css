@@ -1,0 +1,14 @@
+#next{
+    background: #0c375e;
+}
+#next:hover{
+    background: red;
+}
+
+.nav{
+    background: #0c375e;
+}
+.nav:hover{
+    background: #b61e36;
+}
+

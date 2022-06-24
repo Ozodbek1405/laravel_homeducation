@@ -23,14 +23,24 @@
            <div class="container mx-auto px-10">
                <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
                    @foreach($categories as $category)
-                       <div class="flex gap-x-2 items-center p-3 bg-gray-100 rounded-lg">
-                           <div class="">
-                               <img src=" {{ asset('storage/'.$category->icon) }}" alt="" class="h-12 w-12">
+                       <a href="{{route('home.category',['$category' => $category->id])}}">
+                           <div class="category transition duration-200 flex gap-x-2 items-center p-3 rounded-lg">
+                               <div class="">
+                                   <img src=" {{ asset('storage/'.$category->icon) }}" alt="" class="h-12 w-12">
+                               </div>
+                               <h3 class="text-lg font-bold text-white">
+                                   <p>{{$category->name}}</p>
+                               </h3>
                            </div>
-                           <h3 class="text-lg font-bold text-blue-900 hover:text-red-600">
-                               <a href="{{route('home.category')}}">{{$category->name}}</a>
-                           </h3>
-                       </div>
+                       </a>
+                       <style>
+                           .category{
+                               background: #0c375e;
+                           }
+                           .category:hover{
+                               background: #b61e36;
+                           }
+                       </style>
                    @endforeach
                </div>
            </div>

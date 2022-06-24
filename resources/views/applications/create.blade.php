@@ -8,7 +8,7 @@
                 <p class="text-2xl font-semibold mb-3 text-center">
                     Biror variantni tanlang
                 </p>
-                <form action="{{route('create.name.store',$application)}}" method="POST" class="my-10">
+                <form action="{{route('create.name.store')}}" method="POST" class="my-10">
                     @csrf
                     <div class="flex flex-row mx-auto sm:w-9/12 w-full gap-x-2">
                         <div class="flex gap-x-2 items-center mx-auto">

@@ -12,7 +12,7 @@ class HomeController extends Controller
         return view('homepage.home',compact('categories'));
     }
 
-    public function category(){
+    public function category(Request $request){
         $categories = Categories::all();
         return view('categories.categories',compact('categories'));
     }
