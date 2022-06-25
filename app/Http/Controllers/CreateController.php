@@ -18,11 +18,7 @@ class CreateController extends Controller
     public function name_store(Request $request){
         $data = $request->validate([
             'type' => 'required'
-        ],
-            [
-                'type.required' => ('Variantlardan birini tanlang'),
-            ]
-        );
+        ]);
         $application = Application::create($data);
         return redirect()->route('create.category',$application->id);
     }
@@ -68,12 +64,16 @@ class CreateController extends Controller
     }
 
     public function teacher(Application $application){
+
         return view('applications.teachers',compact('application'));
+
     }
 
     public function teacher_store(ApplicationTeacherRequest $request,Application $application){
 
         $data = $request->validated();
+        $fileName = $request->resume->getClientOriginalName();
+        $request->resume->move(public_path('uploads'), $fileName);
         $application->update($data);
         Alert::success('Arizangiz muvaffaqiyatli qoldirildi');
         return redirect()->route("home.index");

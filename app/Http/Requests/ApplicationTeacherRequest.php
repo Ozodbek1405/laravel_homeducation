@@ -30,7 +30,7 @@ class ApplicationTeacherRequest extends FormRequest
             'speciality_science_teacher' => 'required',
             'degree_teacher' => 'required',
             'lesson_lang' => 'required',
-            'resume' => 'required',
+            'resume' => 'required|mimes:pdf,docx|max:10000',
         ];
     }
     public function messages()
@@ -44,6 +44,8 @@ class ApplicationTeacherRequest extends FormRequest
             'degree_teacher.required' => ('Variantlardan birini tanlang'),
             'lesson_lang.required' => ('Variantlardan birini tanlang'),
             'resume.required' => ('Fayl yuklang'),
+            'resume.mimes' => ('Bunday turdagi faylni yuklab bo\'lmaydi'),
+            'resume.max' => ('Bu faylning hajmi juda katta'),
         ];
     }
     public function getValidatorInstance()
