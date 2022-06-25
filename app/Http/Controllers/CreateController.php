@@ -7,6 +7,7 @@ use App\Http\Requests\ApplicationTeacherRequest;
 use App\Models\Categories;
 use Illuminate\Http\Request;
 use App\Models\Application;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class CreateController extends Controller
 {
@@ -17,7 +18,11 @@ class CreateController extends Controller
     public function name_store(Request $request){
         $data = $request->validate([
             'type' => 'required'
-        ]);
+        ],
+            [
+                'type.required' => ('Variantlardan birini tanlang'),
+            ]
+        );
         $application = Application::create($data);
         return redirect()->route('create.category',$application->id);
     }
@@ -32,7 +37,11 @@ class CreateController extends Controller
     public function category_store(Request $request, Application $application){
         $request->validate([
             'category_name' => 'required'
-        ]);
+        ],
+            [
+                'category_name.required' => ('Variantlardan birini tanlang'),
+            ]
+        );
         $checkbox = implode(",", $request->get('category_name'));
         $application->update(['category_name' => $checkbox]);
         if($application->type=='parent'){
@@ -53,7 +62,7 @@ class CreateController extends Controller
 
         $data = $request->validated();
         $application->update($data);
-
+        Alert::success('Arizangiz muvaffaqiyatli qoldirildi');
         return redirect()->route("home.index");
 
     }
@@ -63,9 +72,10 @@ class CreateController extends Controller
     }
 
     public function teacher_store(ApplicationTeacherRequest $request,Application $application){
+
         $data = $request->validated();
         $application->update($data);
-
+        Alert::success('Arizangiz muvaffaqiyatli qoldirildi');
         return redirect()->route("home.index");
     }
 }

@@ -26,7 +26,7 @@ class ApplicationTeacherRequest extends FormRequest
         return [
             'name' => 'required',
             'age_teacher' => 'required',
-            'phone_number' =>  'required|min:13',
+            'phone_number' =>  'numeric|min:13',
             'speciality_science_teacher' => 'required',
             'degree_teacher' => 'required',
             'lesson_lang' => 'required',
@@ -37,13 +37,13 @@ class ApplicationTeacherRequest extends FormRequest
     {
         return [
             'name.required' => ('Ism-familya kiriting'),
-            'age_teacher.required' => ('login.name.unique'),
-            'phone_number.required' => ('login.email.required'),
-            'phone_number.min' => ('login.email.required'),
-            'speciality_science_teacher.required' => ('login.email.email'),
-            'degree_teacher.required' => ('login.email.unique'),
-            'lesson_lang.required' => ('login.password.required'),
-            'resume.required' => ('login.password.min'),
+            'age_teacher.required' => ('Yoshingizni kiriting'),
+            'phone_number.numeric' => ('Telefon raqamingizni to\liq kiriting'),
+            'phone_number.min' => ('Telefon raqam 13 ta bo\'lishi kerak'),
+            'speciality_science_teacher.required' => ('Mutaxassisligingizni kiriting'),
+            'degree_teacher.required' => ('Variantlardan birini tanlang'),
+            'lesson_lang.required' => ('Variantlardan birini tanlang'),
+            'resume.required' => ('Fayl yuklang'),
         ];
     }
     public function getValidatorInstance()

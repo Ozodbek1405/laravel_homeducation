@@ -17,6 +17,9 @@
                                 <label class="text-xl" for="{{$category->name}}">{{$category->name}}</label>
                             </div>
                         @endforeach
+                        @error('category_name')
+                            <p class="text-red-500 my-4 text-center"> {{$message}}</p>
+                        @enderror
                     </div>
                     <div class="flex mx-auto my-12">
                         <input type="submit" id="next"

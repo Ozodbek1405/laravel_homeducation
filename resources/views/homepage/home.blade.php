@@ -69,7 +69,7 @@
             <div class="lg:col-span-1 col-span-2">
                 {!! getContentText('home', 'why_choose_us') !!}
             </div>
-            <div class="col-span-1 lg:block hidden">
+            <div class="col-span-1 lg:block hidden my-auto">
                 <img src="{{ getContentImage('home', 'why_choose_us') }}" alt="#">
             </div>
         </div>

@@ -16,7 +16,11 @@
                                 Ism familyangizni kiriting
                             </label>
                             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight
-                             focus:outline-none focus:shadow-outline" name="name" type="text" placeholder="Ism familyangizni kiriting">
+                             focus:outline-none focus:shadow-outline" name="name" type="text"
+                                   placeholder="Ism familyangizni kiriting" value="{{old('name')}}">
+                            @error('name')
+                                <p class="text-red-500"> {{$message}}</p>
+                            @enderror
                         </div>
 
                         <div class="my-4">
@@ -24,7 +28,11 @@
                                 Necha nafar farzandingizga buyurtma berasiz
                             </label>
                             <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight
-                             focus:outline-none focus:shadow-outline" name="number_of_children" type="number" placeholder="Farzandlaringiz soni">
+                             focus:outline-none focus:shadow-outline" name="number_of_children" type="number"
+                                   placeholder="Farzandlaringiz soni" value="{{old('number_of_children')}}">
+                            @error('number_of_children')
+                                <p class="text-red-500"> {{$message}}</p>
+                            @enderror
                         </div>
 
                         <div class="my-4">
@@ -32,7 +40,11 @@
                                 Farzandlaringiz ism familyasini kiriting
                             </label>
                             <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border
-                             border-gray-300 focus:outline-none" name="about_children" placeholder="Bittadan ko'p bo'lsa vergul bilan kiriting..."></textarea>
+                             border-gray-300 focus:outline-none" name="about_children" placeholder="Bittadan ko'p bo'lsa vergul bilan kiriting...">{{old('about_children')}}
+                            </textarea>
+                            @error('about_children')
+                                <p class="text-red-500"> {{$message}}</p>
+                            @enderror
                         </div>
 
                         <div class="my-4">
@@ -40,7 +52,11 @@
                                 Farzandlaringiz yoshini yoki sinfini kiriting
                             </label>
                             <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border
-                             border-gray-300 focus:outline-none" name="children_age" placeholder="Bittadan ko'p bo'lsa vergul bilan kiriting..."></textarea>
+                             border-gray-300 focus:outline-none" name="children_age" placeholder="Bittadan ko'p bo'lsa vergul bilan kiriting...">{{old('children_age')}}
+                            </textarea>
+                            @error('children_age')
+                                <p class="text-red-500"> {{$message}}</p>
+                            @enderror
                         </div>
 
                         <div class="grid grid-cols-2 gap-x-4 my-4">
@@ -67,6 +83,9 @@
                                             <span class="ml-2">Farqi yoq</span>
                                         </label>
                                     </div>
+                                    @error('teacher_gender')
+                                        <p class="text-red-500"> {{$message}}</p>
+                                    @enderror
                                 </div>
                             </div>
 
@@ -87,6 +106,9 @@
                                             <span class="ml-2">Rus tilida</span>
                                         </label>
                                     </div>
+                                    @error('science_lang')
+                                        <p class="text-red-500"> {{$message}}</p>
+                                    @enderror
                                 </div>
                             </div>
                         </div>
@@ -97,7 +119,10 @@
                             </label>
                             <input class="shadow appearance-none border border-gray-300 rounded w-full
                             py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-                                   id="phone_number" name="phone_number" type="text" placeholder="+998 ** *** ** **">
+                                   id="phone_number" name="phone_number" type="text" placeholder="+998 ** *** ** **" value="{{old('phone_number')}}">
+                            @error('phone_number')
+                                <p class="text-red-500"> {{$message}}</p>
+                            @enderror
                         </div>
 
 

@@ -26,7 +26,7 @@ class ApplicationParentRequest extends FormRequest
         return [
             'name' => 'required',
             'number_of_children' => 'required',
-            'phone_number' =>  'required|min:13',
+            'phone_number' =>  'numeric|min:13',
             'about_children' => 'required',
             'children_age' => 'required',
             'teacher_gender' => 'required',
@@ -36,13 +36,14 @@ class ApplicationParentRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => ('login.name.required'),
-            'number_of_children.required' => ('login.name.unique'),
-            'phone_number.required' => ('login.email.required'),
-            'about_children.required' => ('login.email.email'),
-            'children_age.required' => ('login.email.unique'),
-            'teacher_gender.required' => ('login.password.required'),
-            'science_lang.required' => ('login.password.min'),
+            'name.required' => ('Ism-familya kiriting'),
+            'number_of_children.required' => ('Maydonni to\'ldiring'),
+            'phone_number.numeric' => ('Telefon raqamingizni to\'liq kiriting'),
+            'phone_number.min' => ('Telefon raqam 13 ta bo\'lishi kerak'),
+            'about_children.required' => ('Maydonni to\'ldiring'),
+            'children_age.required' => ('Maydonni to\'ldiring'),
+            'teacher_gender.required' => ('Variantlardan birini tanlang'),
+            'science_lang.required' => ('Variantlardan birini tanlang'),
         ];
     }
     public function getValidatorInstance()
