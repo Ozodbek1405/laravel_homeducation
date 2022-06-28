@@ -15,7 +15,7 @@
 
         {{--    kategoriyalar    --}}
     <div class="my-6 w-11/12 mx-auto my-32">
-       <h1 class="text-center sm:text-5xl text-3xl font-bold mt-4 mb-12">Kategoriyalar</h1>
+       <h1 class="text-center sm:text-5xl text-3xl font-bold mt-4 mb-12">@lang('lang.category')</h1>
            <div class="container mx-auto px-10">
                <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
                    @foreach($categories as $category)
@@ -43,7 +43,7 @@
     </div>
             {{--  biz haqimizda  --}}
     <div class="w-11/12 mx-auto mb-24">
-        <h1 class="text-center font-semibold text-5xl mb-12 border-b-2 border-blue-900 pb-6">Biz haqimizda</h1>
+        <h1 class="text-center font-semibold text-5xl mb-12 border-b-2 border-blue-900 pb-6">@lang('lang.about_me')</h1>
         <div class="grid grid-cols-2 text-lg gap-x-4">
             {!! getContentText('home', 'about_us') !!}
         </div>
@@ -57,7 +57,7 @@
             </div>
             <div class="md:col-span-4 col-span-12 md:mt-0 mt-6">
                <button class="border-2 rounded-3xl px-8 py-2 text-2xl text-white border-white hover:bg-red-700">
-                   <a href="{{setting('site.telegram_bot_link')}}">Botga o'tish</a>
+                   <a href="{{setting('site.telegram_bot_link')}}">@lang('lang.bot')</a>
                </button>
             </div>
         </div>

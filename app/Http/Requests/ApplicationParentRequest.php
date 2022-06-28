@@ -36,14 +36,14 @@ class ApplicationParentRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => ('Ism-familya kiriting'),
-            'number_of_children.required' => ('Maydonni to\'ldiring'),
-            'phone_number.numeric' => ('Telefon raqamingizni to\'liq kiriting'),
-            'phone_number.min' => ('Telefon raqam 13 ta bo\'lishi kerak'),
-            'about_children.required' => ('Maydonni to\'ldiring'),
-            'children_age.required' => ('Maydonni to\'ldiring'),
-            'teacher_gender.required' => ('Variantlardan birini tanlang'),
-            'science_lang.required' => ('Variantlardan birini tanlang'),
+            'name.required' => (__('lang.ism_familya')),
+            'number_of_children.required' => (__('lang.maydon_req')),
+            'phone_number.numeric' => (__('lang.tel_req')),
+            'phone_number.min' => (__('lang.tel_min')),
+            'about_children.required' => (__('lang.maydon_req')),
+            'children_age.required' => (__('lang.maydon_req')),
+            'teacher_gender.required' => (__('lang.variant_req')),
+            'science_lang.required' => (__('lang.variant_req')),
         ];
     }
     public function getValidatorInstance()

@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="w-11/12 mx-auto pt-24 pb-16">
-    <h1 class="text-center text-5xl font-semibold mt-6 mb-24">Biz haqimizda</h1>
+    <h1 class="text-center text-5xl font-semibold mt-6 mb-24">@lang('lang.about_me')</h1>
 
     {{--  1  --}}
     <div class="grid grid-cols-2 gap-x-6 my-6">

@@ -19,7 +19,7 @@ class FaqController extends Controller
        $faqs = new Faq();
        $faqs->questions = $request->input('questions');
        $faqs->save();
-       return redirect()->back()->with('message', 'Savolingiz yuborildi');
+       return redirect()->back()->with('message', (__('lang.faq_savol')));
    }
 
 }

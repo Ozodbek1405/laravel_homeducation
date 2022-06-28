@@ -3,7 +3,8 @@
 
 function getContentText($page, $key)
 {
-    return \App\Models\Content::query()->where('page', $page)->where('key', $key)->first()->text;
+    $text = app()->getLocale() == 'ru' ? 'text_ru' : 'text_uz';
+    return \App\Models\Content::query()->where('page', $page)->where('key', $key)->first()->$text;
 }
 
 function getContentImage($page, $key): string

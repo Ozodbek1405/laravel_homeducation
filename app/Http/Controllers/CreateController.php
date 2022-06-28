@@ -35,7 +35,7 @@ class CreateController extends Controller
             'category_name' => 'required'
         ],
             [
-                'category_name.required' => ('Variantlardan birini tanlang'),
+                'category_name.required' => (__('lang.variant_req')),
             ]
         );
         $checkbox = implode(",", $request->get('category_name'));
@@ -58,7 +58,7 @@ class CreateController extends Controller
 
         $data = $request->validated();
         $application->update($data);
-        Alert::success('Arizangiz muvaffaqiyatli qoldirildi');
+        Alert::success(__('lang.ariza_qoldirildi'));
         return redirect()->route("home.index");
 
     }
@@ -75,7 +75,7 @@ class CreateController extends Controller
         $fileName = $request->resume->getClientOriginalName();
         $request->resume->move(public_path('uploads'), $fileName);
         $application->update($data);
-        Alert::success('Arizangiz muvaffaqiyatli qoldirildi');
+        Alert::success(__('lang.ariza_qoldirildi'));
         return redirect()->route("home.index");
     }
 }

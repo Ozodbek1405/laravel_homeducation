@@ -2,7 +2,7 @@
     <div class="p-6 border-b border-gray-300" style="background: #b61e36">
         <div class="w-11/12 mx-auto flex justify-center items-center lg:justify-between">
             <div class="mr-12 hidden lg:block text-white">
-                <span>Ijtimoiy tarmoqlarda biz bilan bog'laning:</span>
+                <span>@lang('lang.ijtimoiy_tarmoqlar')</span>
             </div>
             <div class="flex justify-center text-white">
                 <a href="{{setting('site.site_facebook_link')}}" class="mr-6 hover:text-blue-900">
@@ -26,25 +26,31 @@
                 <a href="/" class="flex items-center px-2 pb-2">
                     <img src="/storage/{!!str_replace("\\","/",setting('site.site_footer_logo'))!!}" alt="Logo" class="h-16 w-32">
                 </a>
-                <p>{{setting('site.footer_text')}}</p>
+                <p>
+                    @if (session('lang') == 'uz')
+                        {{setting('site.footer_text_uz')}}
+                    @else
+                        {{setting('site.footer_text_ru')}}
+                    @endif
+                </p>
             </div>
             <div class="">
                 <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                    FOYDALI HAVOLALAR
+                    @lang('lang.havola')
                 </h6>
                 <p class="mb-4">
-                    <a href="{{route('home.about_us')}}" class="hover:text-red-600">Biz haqimizda</a>
+                    <a href="{{route('home.about_us')}}" class="hover:text-red-600">@lang('lang.about_me')</a>
                 </p>
                 <p class="mb-4">
                     <a href="{{route('faq')}}" class="hover:text-red-600">FAQ</a>
                 </p>
                 <p class="mb-4">
-                    <a href="{{route('home.instruction')}}" class="hover:text-red-600">Yo'riqnoma</a>
+                    <a href="{{route('home.instruction')}}" class="hover:text-red-600">@lang('lang.instuction')</a>
                 </p>
             </div>
             <div class="">
                 <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-                    Aloqa uchun
+                    @lang('lang.aloqa')
                 </h6>
                 <p class="flex items-center justify-center md:justify-start mb-4">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"

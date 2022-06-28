@@ -16,18 +16,18 @@
             </a>
             <a href="/" class="items-center py-4 px-2 text-white hover:text-red-500">
                 <i class="fa fa-link"></i>
-                Homeducation veb-saytiga o'ting
+                @lang('lang.faq_title')
             </a>
         </div>
         <h1 class="lg:text-3xl md:text-2xl sm:text-xl text-white  font-light  my-6">
-            Homeducation tomonidan tez-tez beriladigan savollarga javoblar va tavsiyalar
+            @lang('lang.faq_text')
         </h1>
         <form action="{{route('faq.question')}}" method="POST">
             @csrf
             <div class="flex relative mx-auto w-full">
                 <input class="bg-gray-400  h-16 sm:pl-16 pl-4 pr-6 rounded-md focus:outline-none focus:border-yellow-500 focus:bg-white w-full text-black lg:md:text-base text-base hover:bg-gray-400"
                        type="text" name="questions" placeholder="Savolingizni qoldiring...   " required/>
-                <input type="submit" class="rounded-md bg-gray-400 cursor-pointer ml-4 px-5 text-xl hover:text-white hover:bg-red-500" value="Yuborish">
+                <input type="submit" class="rounded-md bg-gray-400 cursor-pointer ml-4 px-5 text-xl hover:text-white hover:bg-red-500" value="@lang('lang.yuborish')">
             </div>
             @if(session()->has('message'))
                 <div class="text-white   text-xl">

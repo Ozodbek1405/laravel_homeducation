@@ -14,13 +14,13 @@
                        >@lang('lang.category')
                     </a>
                     <a href="{{route('create.name')}}" class="nav p-2 text-white font-semibold transition duration-300 rounded-lg"
-                       >Ariza qoldirish
+                       >@lang('lang.ariza_qoldirish')
                     </a>
                     <a href="{{route('home.about_us')}}" class="nav p-2 text-white font-semibold transition duration-300 rounded-lg"
-                       >Biz haqimizda
+                       >@lang('lang.about_me')
                     </a>
                     <a href="{{setting('site.admin_telegram_link')}}" class="nav p-2 text-white font-semibold transition duration-300
-                       rounded-lg" >Admin bilan bog'lanish
+                       rounded-lg" >@lang('lang.admin')
                     </a>
                 </div>
             </div>
@@ -42,7 +42,7 @@
             <div class="flex items-center justify-center">
                 @if (session('lang') == 'uz')
                     <a href="{{route('lang', ['lang'=>'uz'])}}" class="text-red-500 hover:text-gray-500 mr-2">
-                        O'Z
+                        UZ
                     </a>
                     I
                     <a href="{{route('lang', ['lang'=>'ru'])}}" class="hover:text-red-500 ml-2">
@@ -74,10 +74,10 @@
     <!-- mobile menu -->
     <div class="hidden mobile-menu">
         <ul class="py-4 ml-8">
-            <li class="active"> <a href="{{route('home.category')}}" class="nav p-2 text-white font-semibold transition duration-300 rounded-lg">Kategoriyalar</a></li>
-            <li class="my-6">  <a href="{{route('create.name')}}" class="nav p-2 text-white font-semibold transition duration-300 rounded-lg">Ariza qoldirish</a></li>
-            <li class="pb-6"><a href="{{route('home.about_us')}}" class="nav p-2 text-white font-semibold transition duration-300 rounded-lg">Biz haqimizda</a></li>
-            <li class="pb-4"><a href="{{setting('site.admin_telegram_link')}}" class="nav p-2 text-white font-semibold transition duration-300 rounded-lg">Admin bilan bog'lanish</a></li>
+            <li class="active"> <a href="{{route('home.category')}}" class="nav p-2 text-white font-semibold transition duration-300 rounded-lg">@lang('lang.category')</a></li>
+            <li class="my-6">  <a href="{{route('create.name')}}" class="nav p-2 text-white font-semibold transition duration-300 rounded-lg">@lang('lang.ariza_qoldirish')</a></li>
+            <li class="pb-6"><a href="{{route('home.about_us')}}" class="nav p-2 text-white font-semibold transition duration-300 rounded-lg">@lang('lang.about_me')</a></li>
+            <li class="pb-4"><a href="{{setting('site.admin_telegram_link')}}" class="nav p-2 text-white font-semibold transition duration-300 rounded-lg">@lang('lang.admin')</a></li>
         </ul>
         <div class="items-center justify-center m-8">
             <a href="{{setting('site.site_telegram_link')}}" class="mr-6 text-blue-900 hover:text-red-600">

@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="w-11/12 mx-auto mb-24">
-    <h1 class="text-center sm:text-5xl text-3xl font-bold mt-32 mb-12 ">Kategoriyalar</h1>
+    <h1 class="text-center sm:text-5xl text-3xl font-bold mt-32 mb-12 ">@lang('lang.category')</h1>
     <div class="container mx-auto px-10">
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
             @foreach($categories as $category)
@@ -20,7 +20,7 @@
                             @csrf
                             <input type="hidden" name="category_name" value="{{$category->name}}">
                             <button type="submit" class="float-right mb-4 inline-block px-6 py-2.5 bg-blue-900 text-white
-                                font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-600 ">Ariza qoldirish
+                                font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-600 ">@lang('lang.arizaqol')
                             </button>
                         </form>
 

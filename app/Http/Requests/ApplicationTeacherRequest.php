@@ -36,16 +36,16 @@ class ApplicationTeacherRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => ('Ism-familya kiriting'),
-            'age_teacher.required' => ('Yoshingizni kiriting'),
-            'phone_number.numeric' => ('Telefon raqamingizni to\liq kiriting'),
-            'phone_number.min' => ('Telefon raqam 13 ta bo\'lishi kerak'),
-            'speciality_science_teacher.required' => ('Mutaxassisligingizni kiriting'),
-            'degree_teacher.required' => ('Variantlardan birini tanlang'),
-            'lesson_lang.required' => ('Variantlardan birini tanlang'),
-            'resume.required' => ('Fayl yuklang'),
-            'resume.mimes' => ('Bunday turdagi faylni yuklab bo\'lmaydi'),
-            'resume.max' => ('Bu faylning hajmi juda katta'),
+            'name.required' => (__('lang.ism_familya')),
+            'age_teacher.required' => (__('lang.yosh_req')),
+            'phone_number.numeric' => (__('lang.tel_req')),
+            'phone_number.min' => (__('lang.tel_min')),
+            'speciality_science_teacher.required' => (__('lang.science_req')),
+            'degree_teacher.required' =>(__('lang.variant_req')),
+            'lesson_lang.required' => (__('lang.variant_req')),
+            'resume.required' => (__('lang.fayl_req')),
+            'resume.mimes' => (__('lang.fayl_mimes')),
+            'resume.max' => (__('lang.fayl_max')),
         ];
     }
     public function getValidatorInstance()

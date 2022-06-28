@@ -6,7 +6,7 @@
         <div сlass="grid-rows-12">
             <div class="container sm:p-5 p-2">
                 <p class="text-2xl font-semibold mb-3 text-center">
-                    Kategoriyalardan birini tanlang
+                    @lang('lang.create_category')
                 </p>
                 <form action="{{route('create.category.store',$application)}}" method="POST" class="my-10">
                     @csrf
@@ -24,7 +24,7 @@
                     <div class="flex mx-auto my-12">
                         <input type="submit" id="next"
                                class="mx-auto cursor-pointer text-white font-normal text-2xl py-3 px-14 rounded-2xl"
-                               name="" value="Yuborish">
+                               name="" value="@lang('lang.yuborish')">
                     </div>
                 </form>
             </div>
