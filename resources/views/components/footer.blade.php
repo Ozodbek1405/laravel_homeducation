@@ -1,5 +1,5 @@
 <footer class="text-center lg:text-left text-white">
-    <div class="p-6 border-b border-gray-300 bg-red-600" >
+    <div class="p-6 border-b border-gray-300" style="background: #b61e36">
         <div class="w-11/12 mx-auto flex justify-center items-center lg:justify-between">
             <div class="mr-12 hidden lg:block text-white">
                 <span>Ijtimoiy tarmoqlarda biz bilan bog'laning:</span>
@@ -23,8 +23,8 @@
     <div class="px-6 py-10 text-center md:text-left" style="background: #0c375e">
         <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-11/12 mx-auto py-12">
             <div class="">
-                <a href="/" class="flex items-center py-4 px-2">
-                    <img src="/storage/{!!str_replace("\\","/",setting('site.logo'))!!}" alt="Logo" class="h-12 w-32">
+                <a href="/" class="flex items-center px-2 pb-2">
+                    <img src="/storage/{!!str_replace("\\","/",setting('site.site_footer_logo'))!!}" alt="Logo" class="h-16 w-32">
                 </a>
                 <p>{{setting('site.footer_text')}}</p>
             </div>

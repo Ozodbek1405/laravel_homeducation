@@ -6,6 +6,7 @@ use App\Models\Application;
 use App\Models\Instruction;
 use Illuminate\Http\Request;
 use App\Models\Categories;
+use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
 {
@@ -49,5 +50,10 @@ class HomeController extends Controller
 
     public function about_us(){
         return view('homepage.about_us');
+    }
+
+    public function lang($lang){
+        Session::put('lang', $lang);
+        return redirect()->back();
     }
 }

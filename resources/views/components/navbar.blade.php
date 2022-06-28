@@ -11,7 +11,7 @@
                 <!-- Primary Navbar items -->
                 <div class="hidden lg:flex items-center space-x-4">
                     <a href="{{route('home.category')}}" class="nav p-2 text-white font-semibold transition duration-300 rounded-lg"
-                       >Kategoriyalar
+                       >@lang('lang.category')
                     </a>
                     <a href="{{route('create.name')}}" class="nav p-2 text-white font-semibold transition duration-300 rounded-lg"
                        >Ariza qoldirish
@@ -38,6 +38,25 @@
                 <a href="{{setting('site.site_gmail_link')}}" class="mr-6 text-blue-900 hover:text-red-600">
                     <i class="fab fa-google"></i>
                 </a>
+            </div>
+            <div class="flex items-center justify-center">
+                @if (session('lang') == 'uz')
+                    <a href="{{route('lang', ['lang'=>'uz'])}}" class="text-red-500 hover:text-gray-500 mr-2">
+                        O'Z
+                    </a>
+                    I
+                    <a href="{{route('lang', ['lang'=>'ru'])}}" class="hover:text-red-500 ml-2">
+                        RU
+                    </a>
+                @else
+                    <a href="{{route('lang', ['lang'=>'uz'])}}" class="hover:text-red-500 mr-2">
+                        UZ
+                    </a>
+                    I
+                    <a href="{{route('lang', ['lang'=>'ru'])}}" class="text-red-500 hover:text-gray-500-500 ml-2">
+                        RU
+                    </a>
+                @endif
             </div>
             <!-- Mobile menu button -->
             <div class="lg:hidden flex items-center">

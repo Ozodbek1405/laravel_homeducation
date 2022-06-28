@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\CreateController;
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Session;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -44,6 +46,8 @@ Route::post('/category_store',[HomeController::class,'category_store'])->name('h
 Route::post('/create_type/{application}',[HomeController::class,'type_store'])->name('create.type.store');
 Route::get('/instructions',[HomeController::class,'instruction'])->name('home.instruction');
 Route::get('/about_us',[HomeController::class,'about_us'])->name('home.about_us');
+Route::get('/lang/{lang}', [HomeController::class, 'lang'])->name('lang');
 #endregion
+
 
 

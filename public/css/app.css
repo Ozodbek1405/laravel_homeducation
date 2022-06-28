@@ -2,7 +2,7 @@
     background: #0c375e;
 }
 #next:hover{
-    background: red;
+    background: #b61e36;
 }
 
 .nav{
@@ -11,5 +11,4 @@
 .nav:hover{
     background: #b61e36;
 }
-
 

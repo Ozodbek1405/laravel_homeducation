@@ -11,8 +11,8 @@
 <section class="py-8" style="background: #0c375e">
     <div class="lg:w-8/12 mx-auto w-10/12">
         <div class="sm:block lg:flex flex-column justify-between ">
-            <a href="/" class="flex items-center py-4 px-2">
-                <img src="/storage/{!!str_replace("\\","/",setting('site.logo'))!!}" alt="Logo" class="h-12 w-32">
+            <a href="/" class="flex items-center p-2">
+                <img src="/storage/{!!str_replace("\\","/",setting('site.site_footer_logo'))!!}" alt="Logo" class="h-16 w-32">
             </a>
             <a href="/" class="items-center py-4 px-2 text-white hover:text-red-500">
                 <i class="fa fa-link"></i>
