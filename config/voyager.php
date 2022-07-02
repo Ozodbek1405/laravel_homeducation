@@ -42,7 +42,7 @@ return [
     */
 
     'models' => [
-       // 'namespace' => 'App\\Models\\',
+        'namespace' => 'App\\Models\\',
     ],
 
     /*
@@ -96,22 +96,11 @@ return [
     */
 
     'multilingual' => [
-        /*
-         * Set whether or not the multilingual is supported by the BREAD input.
-         */
-        'enabled' => false,
-
-        /*
-         * Select default language
-         */
-        'default' => 'en',
-
-        /*
-         * Select languages that are supported.
-         */
+        'enabled' => true,
+        'default' => 'uz',
         'locales' => [
-            'en',
-            //'pt',
+            'uz',
+            'ru',
         ],
     ],
 
