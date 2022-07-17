@@ -12,9 +12,9 @@
                         <img class="rounded-t-lg w-full h-52" src="{{ asset('storage/'.$category->images) }}" alt="#"/>
                     </div>
                     <div class="p-6">
-                        <h5 class="text-gray-900 text-xl font-medium mb-2">{{$category->name}}</h5>
+                        <h5 class="text-gray-900 text-xl font-medium mb-2">{{$category->getTranslatedAttribute('name',Session::get('lang') , 'fallbackLocale')}}</h5>
                         <p class="text-gray-700 text-base mb-4">
-                            {{$category->description}}
+                            {{$category->getTranslatedAttribute('description',Session::get('lang') , 'fallbackLocale')}}
                         </p>
                         <form action="{{route('home.category.store')}}" method="POST">
                             @csrf

@@ -10,14 +10,34 @@
 <body>
 <section class="py-8" style="background: #0c375e">
     <div class="lg:w-8/12 mx-auto w-10/12">
-        <div class="sm:block lg:flex flex-column justify-between ">
-            <a href="/" class="flex items-center p-2">
+        <div class="flex flex-row items-center">
+           <a href="/" class="flex items-center p-2 w-1/2">
                 <img src="/storage/{!!str_replace("\\","/",setting('site.site_footer_logo'))!!}" alt="Logo" class="h-16 w-32">
             </a>
-            <a href="/" class="items-center py-4 px-2 text-white hover:text-red-500">
-                <i class="fa fa-link"></i>
-                @lang('lang.faq_title')
-            </a>
+           <div class="flex flex-row mx-auto">
+               <a href="/" class="items-center py-4 px-2 text-white hover:text-gray-400 lg:block hidden">
+                   @lang('lang.faq_title')
+               </a>
+               <div class="flex items-center justify-center ml-12">
+                   @if (session('lang') == 'ru')
+                       <a href="{{route('lang', ['lang'=>'uz'])}}" class="text-white mr-2">
+                           UZ
+                       </a>
+                       I
+                       <a href="{{route('lang', ['lang'=>'ru'])}}" class="text-red-500 text-white ml-2">
+                           RU
+                       </a>
+                   @else
+                       <a href="{{route('lang', ['lang'=>'uz'])}}" class="text-red-500 text-white mr-2">
+                           UZ
+                       </a>
+                       I
+                       <a href="{{route('lang', ['lang'=>'ru'])}}" class="text-white ml-2">
+                           RU
+                       </a>
+                   @endif
+               </div>
+           </div>
         </div>
         <h1 class="lg:text-3xl md:text-2xl sm:text-xl text-white  font-light  my-6">
             @lang('lang.faq_text')
@@ -43,8 +63,8 @@
             <div class=" lg:w-10/12 md:w-8/12 sm:w-8/12 flex mx-auto md:flex sm:flex items-center bg-white py-5 px-8 rounded-md shadow-lg shadow-indigo-300/40">
                 <img src="https://freepngimg.com/thumb/tax/81517-status-text-faq-tax-logo-filing.png" alt="" class="lg:h-20 md:h-16 sm:h-14 h-8">
                 <div class="px-6 py-3">
-                    <a href="/"><h4 class="text-2xl text-gray-500 mb-3">{{$faq->questions}}</h4></a>
-                    <p class="text-lg text-gray-400">{{$faq->answer}}</p>
+                    <a href="/"><h4 class="text-2xl text-gray-500 mb-3"> {{$faq->getTranslatedAttribute('questions',Session::get('lang') , 'fallbackLocale')}}</h4></a>
+                    <p class="text-lg text-gray-400">{{$faq->getTranslatedAttribute('answer',Session::get('lang') , 'fallbackLocale')}}</p>
                 </div>
             </div>
         </section>

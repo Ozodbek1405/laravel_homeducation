@@ -25,7 +25,7 @@
                                    <img src=" {{ asset('storage/'.$category->icon) }}" alt="" class="h-12 w-12">
                                </div>
                                <h3 class="text-lg font-bold text-white">
-                                   <p>{{$category->name}}</p>
+                                   <p>{{$category->getTranslatedAttribute('name',Session::get('lang') , 'fallbackLocale')}}</p>
                                </h3>
                            </div>
                        </a>

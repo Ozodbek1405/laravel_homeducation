@@ -11,18 +11,10 @@
                 </div>
                 <div class="lg:w-1/2 w-full lg:mt-0 mt-4">
                     <h1 class="text-left text-3xl">
-                        @if (session('lang') == 'uz')
-                            {{$instruction->title_uz}}
-                        @else
-                            {{$instruction->title_ru}}
-                        @endif
+                        {{$instruction->getTranslatedAttribute('title',Session::get('lang') , 'fallbackLocale')}}
                     </h1>
                     <p class="text-left text-xl mt-3">
-                        @if (session('lang') == 'uz')
-                            {{$instruction->text_uz}}
-                        @else
-                            {{$instruction->text_ru}}
-                        @endif
+                        {{$instruction->getTranslatedAttribute('text',Session::get('lang') , 'fallbackLocale')}}
                     </p>
                 </div>
             </div>
