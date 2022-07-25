@@ -9,4 +9,5 @@ class Content extends Model
 {
     use HasFactory;
     protected $table = "content";
+    protected $guarded = [];
 }
