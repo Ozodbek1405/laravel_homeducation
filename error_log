@@ -1,0 +1,6 @@
+[30-Aug-2022 06:56:19 UTC] PHP Warning:  require(/home/homeduca/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/homeduca/public_html/artisan on line 18
+[30-Aug-2022 06:56:19 UTC] PHP Fatal error:  require(): Failed opening required '/home/homeduca/public_html/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/homeduca/public_html/artisan on line 18
+[30-Aug-2022 06:57:41 UTC] PHP Warning:  require(/home/homeduca/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/homeduca/public_html/artisan on line 18
+[30-Aug-2022 06:57:41 UTC] PHP Fatal error:  require(): Failed opening required '/home/homeduca/public_html/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/homeduca/public_html/artisan on line 18
+[30-Aug-2022 06:58:30 UTC] PHP Warning:  require(/home/homeduca/public_html/vendor/autoload.php): failed to open stream: No such file or directory in /home/homeduca/public_html/artisan on line 18
+[30-Aug-2022 06:58:30 UTC] PHP Fatal error:  require(): Failed opening required '/home/homeduca/public_html/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/homeduca/public_html/artisan on line 18
