@@ -1,15 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <div class=" pt-32 pb-8" style="background: #0c375e">
-        <div class=" flex flex-row gap-x-4 w-11/12 mx-auto text-white">
-            <div class="w-1/2 mx-auto md:block hidden">
-                <img class="" src="{{ getContentImage('home', 'header') }}" alt="">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class=" flex flex-row gap-x-4 w-11/12 mx-auto text-white">
+                        <div class="w-1/2 mx-auto md:block hidden">
+                            <img class="" src="{{ getContentImage('home', 'header1') }}" alt="">
+                        </div>
+                        <div class="my-auto md:w-2/5 w-full mx-auto">
+                            {!! getContentText('home', 'header1') !!}
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class=" flex flex-row gap-x-4 w-11/12 mx-auto text-white">
+                        <div class="w-1/2 mx-auto md:block hidden">
+                            <img class="" src="{{ getContentImage('home', 'header2') }}" alt="">
+                        </div>
+                        <div class="my-auto md:w-2/5 w-full mx-auto">
+                            {!! getContentText('home', 'header2') !!}
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="my-auto md:w-2/5 w-full mx-auto">
-                {!! getContentText('home', 'header') !!}
-            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 
@@ -76,5 +94,22 @@
     </div>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            slidesPerView: 1,
+            grabCursor: false,
+            loop: true,
+            speed: 1500,
+            parallax: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: false
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
+        });
+    </script>
 @endsection

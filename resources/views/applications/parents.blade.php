@@ -35,30 +35,6 @@
                             @enderror
                         </div>
 
-                        <div class="my-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                                @lang('lang.far_ism')
-                            </label>
-                            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border
-                             border-gray-300 focus:outline-none" name="about_children" placeholder="...">{{old('about_children')}}
-                            </textarea>
-                            @error('about_children')
-                                <p class="text-red-500"> {{$message}}</p>
-                            @enderror
-                        </div>
-
-                        <div class="my-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                               @lang('lang.far_yosh')
-                            </label>
-                            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border
-                             border-gray-300 focus:outline-none" name="children_age" placeholder="...">{{old('children_age')}}
-                            </textarea>
-                            @error('children_age')
-                                <p class="text-red-500"> {{$message}}</p>
-                            @enderror
-                        </div>
-
                         <div class="grid grid-cols-2 gap-x-4 my-4">
                             <div class="block sm:col-span-1 col-span-2">
                                 <label class="block text-gray-700 text-sm font-bold mb-2">
