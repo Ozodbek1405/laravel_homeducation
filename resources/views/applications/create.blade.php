@@ -12,7 +12,7 @@
                     @csrf
                     <div class="flex flex-row mx-auto sm:w-9/12 w-full gap-x-2">
                         <div class="flex gap-x-2 items-center mx-auto">
-                            <input class="h-4 w-4" type="radio" name="type" value="parent" id="parent" checked>
+                            <input class="h-4 w-4" type="radio" name="type" value="customer" id="parent" checked>
                             <label class="text-lg cursor-pointer" for="parent">@lang('lang.create_parent')</label>
                         </div>
                         <div class="flex gap-x-2 items-center mx-auto">
@@ -23,7 +23,7 @@
                     <div class="flex mx-auto my-12">
                         <input type="submit" id="next"
                                class="mx-auto cursor-pointer text-white font-normal text-2xl py-3 px-14 rounded-2xl"
-                               name="" value="@lang('lang.yuborish')">
+                               value="@lang('lang.yuborish')">
                     </div>
                 </form>
             </div>

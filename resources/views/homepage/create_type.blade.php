@@ -12,7 +12,7 @@
                     @csrf
                     <div class="flex flex-row mx-auto sm:w-9/12 w-full gap-x-2">
                         <div class="flex gap-x-2 items-center mx-auto">
-                            <input class="h-4 w-4" type="radio" name="type" value="parent" id="parent" checked>
+                            <input class="h-4 w-4" type="radio" name="type" value="customer" id="parent" checked>
                             <label class="text-lg cursor-pointer" for="parent">@lang('lang.create_parent')</label>
                         </div>
                         <div class="flex gap-x-2 items-center mx-auto">

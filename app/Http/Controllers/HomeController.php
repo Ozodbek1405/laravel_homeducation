@@ -33,7 +33,7 @@ class HomeController extends Controller
             'type' => 'required'
         ]);
         $application -> update($data);
-        if ($data['type'] === 'parent') {
+        if ($data['type'] === 'customer') {
             return redirect()->route('create.parent',$application->id);
         }
 

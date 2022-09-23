@@ -40,10 +40,10 @@ class CreateController extends Controller
         );
         $checkbox = implode(",", $request->get('category_name'));
         $application->update(['category_name' => $checkbox]);
-        if($application->type=='parent'){
+        if($application->type==='customer'){
             return redirect()->route('create.parent',$application->id);
         }
-        elseif ($application->type=='teacher'){
+        elseif ($application->type==='teacher'){
             return redirect()->route('create.teacher',$application->id);
         }
     }

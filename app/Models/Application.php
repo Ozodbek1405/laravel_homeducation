@@ -15,8 +15,6 @@ class Application extends Model
         'category_name',
         'phone_number',
         'number_of_children',
-        'about_children',
-        'children_age',
         'teacher_gender',
         'science_lang',
         'age_teacher',
@@ -25,4 +23,5 @@ class Application extends Model
         'lesson_lang',
         'resume'
     ];
+
 }

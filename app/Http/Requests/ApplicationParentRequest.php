@@ -27,8 +27,6 @@ class ApplicationParentRequest extends FormRequest
             'name' => 'required',
             'number_of_children' => 'required',
             'phone_number' =>  'numeric|min:13',
-            'about_children' => 'required',
-            'children_age' => 'required',
             'teacher_gender' => 'required',
             'science_lang' => 'required',
         ];
@@ -40,8 +38,6 @@ class ApplicationParentRequest extends FormRequest
             'number_of_children.required' => (__('lang.maydon_req')),
             'phone_number.numeric' => (__('lang.tel_req')),
             'phone_number.min' => (__('lang.tel_min')),
-            'about_children.required' => (__('lang.maydon_req')),
-            'children_age.required' => (__('lang.maydon_req')),
             'teacher_gender.required' => (__('lang.variant_req')),
             'science_lang.required' => (__('lang.variant_req')),
         ];
