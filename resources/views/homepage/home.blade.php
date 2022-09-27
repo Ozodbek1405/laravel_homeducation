@@ -6,22 +6,36 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class=" flex flex-row gap-x-4 w-11/12 mx-auto text-white">
-                        <div class="w-1/2 mx-auto md:block hidden">
-                            <img class="rounded-xl" src="{{ getContentImage('home', 'header1') }}" alt="">
+                    <div class="md:block hidden">
+                        <div class="flex flex-row gap-x-4 w-11/12 mx-auto text-white">
+                            <div class="w-1/2 mx-auto">
+                                <img class="rounded-xl" src="{{ getContentImage('home', 'header1') }}" alt="">
+                            </div>
+                            <div class="my-auto md:w-2/5 w-full mx-auto">
+                                {!! getContentText('home', 'header1') !!}
+                            </div>
                         </div>
-                        <div class="my-auto md:w-2/5 w-full mx-auto">
-                            {!! getContentText('home', 'header1') !!}
+                    </div>
+                    <div class="md:hidden block text-white flex flex-row mb-10">
+                        <div class="w-full ml-8">
+                            {!! getContentText('home', 'header_mobile1') !!}
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class=" flex flex-row gap-x-4 w-11/12 mx-auto text-white">
-                        <div class="w-1/2 mx-auto md:block hidden">
-                            <img class="rounded-xl" src="{{ getContentImage('home', 'header2') }}" alt="">
+                    <div class="md:block hidden">
+                        <div class="flex flex-row gap-x-4 w-11/12 mx-auto text-white">
+                            <div class="w-1/2 mx-auto">
+                                <img class="rounded-xl" src="{{ getContentImage('home', 'header1') }}" alt="">
+                            </div>
+                            <div class="my-auto md:w-2/5 w-full mx-auto">
+                                {!! getContentText('home', 'header2') !!}
+                            </div>
                         </div>
-                        <div class="my-auto md:w-2/5 w-full mx-auto">
-                            {!! getContentText('home', 'header2') !!}
+                    </div>
+                    <div class="md:hidden block text-white flex flex-row mb-10">
+                        <div class="w-full ml-8">
+                            {!! getContentText('home', 'header_mobile2') !!}
                         </div>
                     </div>
                 </div>
