@@ -8,7 +8,7 @@
                 <div class="swiper-slide">
                     <div class=" flex flex-row gap-x-4 w-11/12 mx-auto text-white">
                         <div class="w-1/2 mx-auto md:block hidden">
-                            <img class="" src="{{ getContentImage('home', 'header1') }}" alt="">
+                            <img class="rounded-xl" src="{{ getContentImage('home', 'header1') }}" alt="">
                         </div>
                         <div class="my-auto md:w-2/5 w-full mx-auto">
                             {!! getContentText('home', 'header1') !!}
@@ -18,7 +18,7 @@
                 <div class="swiper-slide">
                     <div class=" flex flex-row gap-x-4 w-11/12 mx-auto text-white">
                         <div class="w-1/2 mx-auto md:block hidden">
-                            <img class="" src="{{ getContentImage('home', 'header2') }}" alt="">
+                            <img class="rounded-xl" src="{{ getContentImage('home', 'header2') }}" alt="">
                         </div>
                         <div class="my-auto md:w-2/5 w-full mx-auto">
                             {!! getContentText('home', 'header2') !!}
@@ -59,14 +59,6 @@
                </div>
            </div>
     </div>
-            {{--  biz haqimizda  --}}
-    <div class="w-11/12 mx-auto mb-24">
-        <h1 class="text-center font-semibold text-5xl mb-12 border-b-2 border-blue-900 pb-6">@lang('lang.about_me')</h1>
-        <div class="grid grid-cols-2 text-lg gap-x-4">
-            {!! getContentText('home', 'about_us') !!}
-        </div>
-    </div>
-
         {{--   telegram bot   --}}
     <div class="py-24 my-24" style="background: #0c375e">
         <div class="w-11/12 mx-auto grid grid-cols-12 gap-x-4 items-center ">
