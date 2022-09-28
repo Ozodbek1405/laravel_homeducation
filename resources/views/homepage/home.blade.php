@@ -26,7 +26,7 @@
                     <div class="md:block hidden">
                         <div class="flex flex-row gap-x-4 w-11/12 mx-auto text-white">
                             <div class="w-1/2 mx-auto">
-                                <img class="rounded-xl" src="{{ getContentImage('home', 'header1') }}" alt="">
+                                <img class="rounded-xl" src="{{ getContentImage('home', 'header2') }}" alt="">
                             </div>
                             <div class="my-auto md:w-2/5 w-full mx-auto">
                                 {!! getContentText('home', 'header2') !!}
