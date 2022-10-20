@@ -27,10 +27,10 @@
                     <img src="/storage/{!!str_replace("\\","/",setting('site.site_footer_logo'))!!}" alt="Logo" class="h-16 w-32">
                 </a>
                 <p>
-                    @if (session('lang') === 'uz')
-                        {{setting('site.footer_text_uz')}}
-                    @elseif(session('lang') === 'ru')
+                    @if (session('lang') === 'ru')
                         {{setting('site.footer_text_ru')}}
+                    @else
+                        {{setting('site.footer_text_uz')}}
                     @endif
                 </p>
             </div>
